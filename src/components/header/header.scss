@@ -1,0 +1,58 @@
+// |===========================================================================|
+// |-----------------------------| Header Style |------------------------------|
+// |===========================================================================|
+
+@import "/src/styles/settings.scss";
+
+// ===========================================================================
+
+header {
+
+    padding: 10px;
+    border-bottom: 1px solid $shadow-light-grey;
+    user-select: none;
+
+    .header-nav {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+
+        .header-first-bloc {
+
+            .img {}
+        }
+
+        .header-scnd-bloc {
+
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            text-transform: uppercase;
+
+            .nav-btn {
+
+                text-decoration: none;
+                color: $color-police-main;
+                font-family: $font-title;
+                font-size: 1.05em;
+                margin: 0;
+            }
+
+            .nav-contact-btn {
+
+                text-decoration: none;
+                color: $color-police-main;
+                font-family: $font-title;
+                font-size: 1.05em;
+                border: 1px solid $shadow-light-grey;
+                border-radius: 10px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+// |===========================================================================|
+// |--------------------------| Paramètres du site |---------------------------|
+// |===========================================================================|
+
+// --------- Couleur du site ---------
+
+$color-primary: #0c0b0c;
+$color-secondary: #e2e2e2;
+
+// --------- Nuance du site ----------
+
+$color-white: #ffffff;
+$color-fond-whitegrey: #F6F6F6;
+$color-verydarkgrey: #5e5e5e;
+$color-black: #000000;
+
+// --------- Nuance shadows ----------
+
+$shadow-light-grey: #d4d4d433;
+$shadow-grey: #d3d3d3ab;
+$shadow-darkgrey: #7e7e7e79;
+
+// --------- Nuance police -----------
+
+$color-police-main: #e7e7e7;
+
+// --------- Police du site ----------
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url(../assets/fonts/Audiowide-Regular.ttf);
+}
+
+// @font-face {
+//     font-family: 'Montserrat bold';
+//     src: url(../Fonts/Montserrat/Montserrat-Bold.ttf);
+// }
+
+// ------- Mixins et variables -------
+
+$font-title: 'Audiowide';
+
+// $font-text-bold: 'Montserrat bold';
+
+// ---------- Responsive ------------
+
+// Small Mobile version
+// $xs: 380px;
+
+// Mobile version
+// $sm: 490px;
+
+// Large Mobile version
+// $md: 700px;
+
+// Tablet Version
+// $lg: 920px;
+
+// Desktop Version
+// $xl: 1440px;
+
+// ------- Ajustement du site --------
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-primary;
+}
+
+p,
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
