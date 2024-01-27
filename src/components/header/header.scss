@@ -4,13 +4,14 @@
 
 @import "/src/styles/settings.scss";
 
-// ===========================================================================
+// =============================================================================
 
 header {
 
     padding: 10px;
-    border-bottom: 1px solid $shadow-light-grey;
+    border-bottom: 1px solid $border-light-grey;
     user-select: none;
+    overflow: hidden;
 
     .header-nav {
 
@@ -24,15 +25,42 @@ header {
 
         .header-first-bloc {
 
-            .img {}
+            position: relative;
+            width: 15%;
+            height: 100%;
+
+            img {}
+
+            &::after {
+
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0%, -50%);
+                width: 1px;
+                height: 70px;
+                background-color: $border-light-grey;
+            }
         }
 
         .header-scnd-bloc {
 
             display: flex;
             align-items: center;
-            gap: 80px;
+            gap: 50px;
             text-transform: uppercase;
+
+            &:last-child::before {
+                content: "";
+                position: absolute;
+                top: 30px;
+                right: 310px;
+                // transform: translate(0%, -50%);
+                width: 1px;
+                height: 35px;
+                background-color: $border-light-grey;
+            }
 
             .nav-btn {
 
@@ -41,6 +69,52 @@ header {
                 font-family: $font-title;
                 font-size: 1.05em;
                 margin: 0;
+                position: relative;
+
+                &:hover {
+
+                    color: transparent;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: rgba(214, 214, 214, 0.384);
+
+                    &::before {
+
+                        width: 20%;
+                        transform: translateX(-420%);
+                    }
+
+                    &::after {
+
+                        width: 20%;
+                        transform: translateX(420%);
+                    }
+                }
+
+                &::before {
+
+                    content: "";
+                    position: absolute;
+                    top: 25px;
+                    right: -5px;
+                    width: 0%;
+                    height: 2px;
+                    background: white;
+                    filter: drop-shadow(2px 0px 5px $color-white);
+                    transition: 0.5s ease;
+                }
+
+                &::after {
+
+                    content: "";
+                    position: absolute;
+                    bottom: 25px;
+                    left: -5px;
+                    width: 0%;
+                    height: 2px;
+                    background: white;
+                    filter: drop-shadow(2px 0px 5px $color-white);
+                    transition: 0.5s ease;
+                }
             }
 
             .nav-contact-btn {
@@ -49,9 +123,38 @@ header {
                 color: $color-police-main;
                 font-family: $font-title;
                 font-size: 1.05em;
-                border: 1px solid $shadow-light-grey;
+                border: 1px solid $border-light-grey;
                 border-radius: 10px;
                 padding: 10px 20px;
+                margin-left: 25px;
+                background-color: rgba(211, 211, 211, 0.171);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                overflow: hidden;
+                transition: 0.4s ease;
+
+                &:hover {
+
+                    filter: drop-shadow(0px 2px 50px $shadow-light-grey);
+                    border: 1px solid rgba(255, 255, 255, 0.500);
+
+                    &:before {
+
+                        transform: skewX(45deg) translateX(200%);
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 100%;
+                    background: linear-gradient(to left, rgba(133, 133, 133, 0.205), transparent);
+                    transform: skewX(45deg) translateX(0);
+                    transition: transform 0.4s ease;
+                }
             }
         }
     }
