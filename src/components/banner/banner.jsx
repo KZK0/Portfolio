@@ -16,7 +16,7 @@ export const Banner = () => {
             baseColor: 0x595959, // Couleur de base (optionnel)
             blurFactor: 0.9, // Facteur de flou (optionnel)
             speed: 1, // Vitesse de l'animation (optionnel)
-            zoom: 0.6 // Zoom (optionnel)
+            zoom: 0.3 // Zoom (optionnel)
             // Vous pouvez ajuster ces valeurs selon vos préférences
         });
 
@@ -29,7 +29,8 @@ export const Banner = () => {
     return (
         <section className='banner-section'>
             <div className='banner-bloc'>
-                <p>Hi, im KZKO and im a Front-End develloper</p>
+                <h1>Hi, im KZKO</h1>
+                <h2>Im a French Student</h2>
             </div>
         </section>
     );
