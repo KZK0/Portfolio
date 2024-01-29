@@ -4,8 +4,8 @@
 
 TÂCHES PRINCIPALES:
 
-- Finir le headers et régler le problème du before & position au scroll + glass effect
 - Travailler sur la banner
+-
 -
 
 

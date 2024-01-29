@@ -10,6 +10,7 @@ header {
 
     padding: 10px;
     border-bottom: 1px solid $border-light-grey;
+    background-color: $background-header;
     user-select: none;
     overflow: hidden;
     transition: background-color 0.5s linear, box-shadow 0.5s linear;
@@ -51,26 +52,95 @@ header {
         align-items: center;
         max-width: 90%;
         margin: 0 auto;
-        padding: 15px;
 
         .header-first-bloc {
 
             position: relative;
-            width: 15%;
-            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
 
-            img {}
+            .nav-logo-btn {
 
-            &::after {
+                border: none;
+                background: transparent;
+                user-select: none;
+                transition: 0.4s ease;
 
-                content: "";
-                position: absolute;
-                top: 50%;
-                right: 0;
-                transform: translate(0%, -50%);
-                width: 1px;
+                &:hover {
+
+                    cursor: pointer;
+                    filter: drop-shadow(2px 0px 20px rgba(172, 172, 172, 0.562));
+                }
+
+                .nav-logo-text {
+
+                    color: $color-police-main;
+                    font-size: 2em;
+                    font-family: $font-title;
+                    letter-spacing: 1px;
+                    margin: 0;
+
+                    .nav-logo-span {
+
+                        animation: flicker 0.7s linear infinite;
+
+                        @keyframes flicker {
+                            0% {
+                                color: #ffffff80;
+                            }
+
+                            50% {
+                                color: white;
+                            }
+
+                            100% {
+                                color: #ffffff80;
+                            }
+                        }
+                    }
+                }
+
+                .nav-logo-hr {
+
+                    margin: 0;
+                    width: 40px;
+                    border-radius: 20px;
+                    border-color: rgb(167, 167, 167);
+                    animation: movebar 5s linear infinite;
+
+                    @keyframes movebar {
+                        0% {
+                            transform: translateX(0px);
+                        }
+
+                        50% {
+                            transform: translateX(50px);
+                        }
+
+                        100% {
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+
+                .nav-logo-scnd-text {
+
+                    color: rgb(116, 116, 116);
+                    font-size: 1.5em;
+                    font-family: $font-logoOrDesc;
+                    text-align: right;
+                    margin: 0;
+                }
+            }
+
+            .hr-nav-one {
+
                 height: 70px;
-                background-color: $border-light-grey;
+                width: 0px;
+                border-color: $border-light-grey;
             }
         }
 
@@ -136,7 +206,7 @@ header {
                 }
             }
 
-            .hr-nav {
+            .hr-nav-two {
                 height: 30px;
                 border-color: $border-light-grey;
                 margin: 0;
@@ -144,6 +214,10 @@ header {
 
             .nav-contact-btn {
 
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
                 text-decoration: none;
                 color: $color-police-main;
                 font-family: $font-title;
@@ -157,6 +231,11 @@ header {
                 overflow: hidden;
                 transition: 0.4s ease;
                 position: relative;
+
+                i {
+                    margin: 0;
+                    color: $color-police-main;
+                }
 
                 &:before {
                     content: "";
@@ -173,7 +252,7 @@ header {
                 &:hover {
 
                     filter: drop-shadow(0px 2px 50px $shadow-light-grey);
-                    animation: flickering 0.3s ease forwards;
+                    animation: flickering 0.2s ease forwards;
 
                     @keyframes flickering {
                         0% {

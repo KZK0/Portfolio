@@ -10,8 +10,7 @@ $color-primary: #0c0b0c;
 // --------- Nuance du site ----------
 
 $color-white: #ffffff;
-// $color-fond-whitegrey: #F6F6F6;
-// $color-verydarkgrey: #5e5e5e;
+$background-header: #2020206c;
 $color-black: #000000;
 
 // --------- Nuance shadows ----------
@@ -32,19 +31,26 @@ $color-police-main: #d4d4d4;
 
 @font-face {
     font-family: 'Audiowide';
-    src: url(../assets/fonts/Audiowide-Regular.ttf);
+    src: url(../assets/fonts/audiowide/Audiowide-Regular.ttf);
 }
 
-// @font-face {
-//     font-family: 'Montserrat bold';
-//     src: url(../Fonts/Montserrat/Montserrat-Bold.ttf);
-// }
+@font-face {
+    font-family: 'Righteous';
+    src: url(../assets/fonts/righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'intolight';
+    src: url(../assets/fonts/intolight/ShadowsIntoLight-Regular.ttf);
+}
 
 // ------- Mixins et variables -------
 
 $font-title: 'Audiowide';
 
-// $font-text-bold: 'Montserrat bold';
+$font-logoOrDesc: 'intolight';
+
+$font-text: 'Righteous';
 
 // ---------- Responsive ------------
 
@@ -81,4 +87,21 @@ ul {
     margin: 0;
     list-style: none;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0 0% 10% / 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0 0% 20% / 1);
+    border-radius: 100vw;
+
+    &:hover {
+        background: hsl(0 0% 60% / 0.5);
+    }
 }

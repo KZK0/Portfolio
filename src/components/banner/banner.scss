@@ -22,22 +22,100 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
+        user-select: none;
+        position: relative;
 
         h1 {
-            font-size: 3em;
-            font-family: sans-serif;
+            font-size: 5em;
+            font-family: $font-text;
             color: $color-police-main;
-            width: 40%;
             margin: 0;
+            margin-left: 20%;
+
+            .banner-text-style {
+                color: rgb(27, 27, 27);
+                transition: 0.4s ease;
+                font-family: $font-text;
+                filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+            }
         }
 
         h2 {
-            font-size: 3em;
-            font-family: sans-serif;
+            font-size: 4em;
+            font-family: system-ui;
             color: $color-police-main;
-            width: 40%;
             margin: 0;
+            margin-left: 25%;
+
+            .word-animation {
+                position: relative;
+                color: rgb(27, 27, 27);
+                filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+                transition: 0.4s ease;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $color-white;
+                    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+                }
+
+                &:hover {
+
+                    color: $color-police-main;
+                }
+            }
+        }
+
+        .banner-line {
+
+            width: 230px;
+            height: 2px;
+            border-color: $border-light-grey;
+            background-color: $color-white;
+            filter: drop-shadow(0px 2px 5px $color-white);
+            margin: 2px;
+            margin-left: 40%;
+        }
+
+        .banner-paragraph {
+
+            width: 37%;
+            font-size: 1em;
+            font-family: system-ui;
+            color: $color-police-main;
+            margin: 20px;
+            margin-left: 25%;
+        }
+
+        i {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(0%, -50%);
+            color: $color-police-main;
+            font-size: 2em;
+            margin: 0;
+            animation: arrowmoving 1s linear infinite;
+
+            @keyframes arrowmoving {
+
+                0% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(5px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                }
+            }
         }
     }
 }

@@ -23,14 +23,19 @@ export const Header = () => {
             <nav className='header-nav'>
                 <div className="header-first-bloc">
                     <NavLink to="/">
-                        <img src="" alt="Home button designed KZKO" />
+                        <button className="nav-logo-btn">
+                            <p className="nav-logo-text"><span className="nav-logo-span">K</span>ZKO</p>
+                            <hr className="nav-logo-hr" />
+                            <p className="nav-logo-scnd-text">Portfolio.</p>
+                        </button>
                     </NavLink>
+                    <hr className="hr-nav-one" />
                 </div>
                 <div className="header-scnd-bloc">
                     <NavLink className='nav-btn' to="/">Home</NavLink>
                     <NavLink className='nav-btn' to="/Project">Projects</NavLink>
-                    <hr className="hr-nav" />
-                    <NavLink className='nav-contact-btn' to="/Contact">Contact Me</NavLink>
+                    <hr className="hr-nav-two" />
+                    <NavLink className='nav-contact-btn' to="/Contact">Contact Me<i class="fa-regular fa-envelope"></i></NavLink>
                 </div>
             </nav>
         </header>
