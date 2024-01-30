@@ -25,7 +25,7 @@ export const Banner = () => {
         // Change le mot affiché toutes les 5 secondes
         const interval = setInterval(() => {
             setCurrentWordIndex(currentIndex => (currentIndex + 1) % words.length);
-        }, 5000);
+        }, 3000);
 
         // Nettoie l'effet de brouillard et arrête l'intervalle lors du démontage du composant
         return () => {

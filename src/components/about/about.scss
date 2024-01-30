@@ -1,0 +1,260 @@
+// |===========================================================================|
+// |------------------------------| About Style |------------------------------|
+// |===========================================================================|
+
+@import "/src/styles/settings.scss";
+
+// =============================================================================
+
+.about-section {
+
+    margin-bottom: 50px;
+
+    .about-bloc {
+
+        width: 100%;
+        height: 100%;
+        background-color: $color-primary;
+        border-top: 1px solid $border-light-grey;
+
+        .about-title {
+
+            max-width: 70%;
+            margin: 0 auto;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $border-light-grey;
+            }
+
+            h3 {
+                font-family: $font-text;
+                font-size: 4.5em;
+                color: rgba(65, 65, 65, 0.247);
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            p {
+                font-family: $font-text;
+                font-size: 2em;
+                color: $color-police-main;
+                margin: 0;
+                position: absolute;
+                top: 40px;
+                left: 30px;
+                filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+            }
+        }
+
+        .about-card {
+
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            max-width: 60%;
+            margin: 0 auto;
+
+            .about-card-first {
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 80%;
+                padding: 30px 30px;
+
+                h4 {
+                    font-family: $font-main-text;
+                    font-size: 2em;
+                    color: $color-police-main;
+                    margin: 0;
+                    position: relative;
+
+                    span {
+                        font-family: $font-text;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 60px;
+                        height: 4px;
+                        background-color: $border-light-grey;
+                        bottom: -5px;
+                        left: 0;
+                    }
+                }
+
+                p {
+                    font-family: $font-main-text;
+                    font-size: 1.3em;
+                    color: $color-police-main;
+                    margin: 0;
+                }
+
+                .about-margin {
+
+                    margin: 40px 0;
+                }
+
+                button {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 25px;
+                    width: 220px;
+                    padding: 15px;
+                    border: 1px solid $border-light-grey;
+                    border-radius: 2px;
+                    background: none;
+                    color: $border-light-grey;
+                    font-family: system-ui;
+                    font-size: 1.3em;
+                    font-weight: 600;
+                    transition: 0.4s ease;
+
+                    i {
+                        color: $border-light-grey;
+                        transition: 0.4s ease;
+                    }
+
+                    &:hover {
+                        color: rgba(221, 221, 221, 0.589);
+                        border-color: rgba(221, 221, 221, 0.589);
+                        background-color: rgba(209, 209, 209, 0.062);
+                        cursor: pointer;
+
+                        i {
+                            color: rgba(221, 221, 221, 0.589);
+                        }
+                    }
+                }
+            }
+
+            .about-card-scnd {
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 20%;
+                padding: 20px 30px;
+                border-left: 1px solid $border-light-grey;
+
+                .card-img {
+
+                    background-image: url(/src/assets/images/profile/me.webp);
+                    background-size: 300px;
+                    background-repeat: no-repeat;
+                    background-position: right 50% bottom 75%;
+                    background-color: rgb(31, 31, 31);
+                    border: 1px solid $border-light-grey;
+                    border-radius: 1%;
+                    width: 170px;
+                    height: 170px;
+                    margin: 0 auto;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('/src/assets/images/profile/picme.webp');
+                        background-size: 80%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        opacity: 0;
+                        transition: 0.4s ease;
+
+                    }
+
+                    &:hover {
+
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .card-link {
+
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5px;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+
+                    button {
+
+                        background-color: transparent;
+                        border: 1px solid $border-light-grey;
+                        border-radius: 2px;
+                        width: 40px;
+                        height: 100%;
+                        padding: 8px;
+                        transition: 0.4s ease;
+
+                        i {
+                            font-size: 1.6em;
+                            color: $border-light-grey;
+                        }
+
+                        &:hover {
+                            background-color: rgba(209, 209, 209, 0.062);
+                            border-color: rgba(221, 221, 221, 0.589);
+                            cursor: pointer;
+
+                            i {
+                                color: rgba(221, 221, 221, 0.589);
+                            }
+                        }
+                    }
+                }
+
+                .card-info {
+
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    padding-left: 15px;
+                    width: 100%;
+
+                    p {
+
+                        display: flex;
+                        align-items: center;
+                        gap: 3px;
+                        font-size: 0.9em;
+                        font-family: $font-main-text;
+                        color: $color-police-main;
+                        margin: 5px 0;
+
+
+                        i {
+                            color: $color-police-main;
+                        }
+
+                        span {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

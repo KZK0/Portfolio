@@ -5,8 +5,9 @@
 TÂCHES PRINCIPALES:
 
 - Travailler sur la banner
--
--
+- Ajout loader
+- Ajout des réseaux
+- Ajout potentiel bouton
 
 
 TÂCHES SECONDAIRES:
@@ -18,6 +19,9 @@ TÂCHES SECONDAIRES:
 
 DIVERS:
 
--
--
--
+- Responsive
+- SEO
+- Détails footer
+- Changement de langue
+- Ajout d'un bouton like dans le footer avec le nombre de like total
+- Ajout bouton pour revenir en haut après avoir scroll

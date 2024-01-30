@@ -8,7 +8,11 @@
 
 header {
 
-    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
     border-bottom: 1px solid $border-light-grey;
     background-color: $background-header;
     user-select: none;
@@ -51,6 +55,7 @@ header {
         justify-content: space-between;
         align-items: center;
         max-width: 90%;
+        padding: 10px;
         margin: 0 auto;
 
         .header-first-bloc {
@@ -130,7 +135,7 @@ header {
 
                     color: rgb(116, 116, 116);
                     font-size: 1.5em;
-                    font-family: $font-logoOrDesc;
+                    font-family: $font-caligraphy;
                     text-align: right;
                     margin: 0;
                 }

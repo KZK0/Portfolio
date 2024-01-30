@@ -44,13 +44,20 @@ $color-police-main: #d4d4d4;
     src: url(../assets/fonts/intolight/ShadowsIntoLight-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Grotesk';
+    src: url(../assets/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf);
+}
+
 // ------- Mixins et variables -------
 
 $font-title: 'Audiowide';
 
-$font-logoOrDesc: 'intolight';
+$font-main-text: 'Grotesk';
 
 $font-text: 'Righteous';
+
+$font-caligraphy: 'intolight';
 
 // ---------- Responsive ------------
 
@@ -89,17 +96,18 @@ ul {
     padding: 0;
 }
 
+// ------- Style scrollbar --------
+
 ::-webkit-scrollbar {
-    width: 0.5em;
+    width: 0.4em;
 }
 
 ::-webkit-scrollbar-track {
-    background: hsl(0 0% 10% / 1);
+    background: hsl(0, 0%, 13%);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsl(0 0% 20% / 1);
-    border-radius: 100vw;
+    background: hsl(0, 0%, 20%);
 
     &:hover {
         background: hsl(0 0% 60% / 0.5);

@@ -9,10 +9,6 @@
 
 .banner-section {
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
     width: 100%;
 
     .banner-bloc {
@@ -84,9 +80,9 @@
 
         .banner-paragraph {
 
-            width: 37%;
+            width: 39%;
             font-size: 1em;
-            font-family: system-ui;
+            font-family: $font-main-text;
             color: $color-police-main;
             margin: 20px;
             margin-left: 25%;
@@ -106,14 +102,17 @@
 
                 0% {
                     transform: translateY(0px);
+                    opacity: 1;
                 }
 
                 50% {
                     transform: translateY(5px);
+                    opacity: 0.5;
                 }
 
                 100% {
                     transform: translateY(0px);
+                    opacity: 1;
                 }
             }
         }
