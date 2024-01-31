@@ -129,13 +129,13 @@
                     }
 
                     &:hover {
-                        color: rgba(221, 221, 221, 0.589);
-                        border-color: rgba(221, 221, 221, 0.589);
-                        background-color: rgba(209, 209, 209, 0.062);
+                        color: $border-btn-after;
+                        border-color: $border-btn-after;
+                        background-color: $background-btn;
                         cursor: pointer;
 
                         i {
-                            color: rgba(221, 221, 221, 0.589);
+                            color: $border-btn-after;
                         }
                     }
                 }
@@ -156,7 +156,7 @@
                     background-size: 300px;
                     background-repeat: no-repeat;
                     background-position: right 50% bottom 75%;
-                    background-color: rgb(31, 31, 31);
+                    background-color: $profil-card-background;
                     border: 1px solid $border-light-grey;
                     border-radius: 1%;
                     width: 170px;
@@ -175,7 +175,6 @@
                         background-repeat: no-repeat;
                         opacity: 0;
                         transition: 0.4s ease;
-
                     }
 
                     &:hover {
@@ -210,12 +209,12 @@
                         }
 
                         &:hover {
-                            background-color: rgba(209, 209, 209, 0.062);
-                            border-color: rgba(221, 221, 221, 0.589);
+                            background-color: $background-btn;
+                            border-color: $border-btn-after;
                             cursor: pointer;
 
                             i {
-                                color: rgba(221, 221, 221, 0.589);
+                                color: $border-btn-after;
                             }
                         }
                     }

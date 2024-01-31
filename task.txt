@@ -17,7 +17,7 @@ TÂCHES SECONDAIRES:
 -
 
 
-DIVERS:
+DIVERS/IDEES:
 
 - Responsive
 - SEO
@@ -25,3 +25,4 @@ DIVERS:
 - Changement de langue
 - Ajout d'un bouton like dans le footer avec le nombre de like total
 - Ajout bouton pour revenir en haut après avoir scroll
+- Carrousel de plusieurs quote
