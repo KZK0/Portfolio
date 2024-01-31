@@ -14,7 +14,7 @@ export const Quote = () => {
             highlightColor: 0x0, // Couleur de mise en évidence (optionnel)
             midtoneColor: 0x0, // Couleur médiane (optionnel)
             lowlightColor: 0x0, // Couleur basse (optionnel)
-            baseColor: 0x595959, // Couleur de base (optionnel)
+            baseColor: 0x828282, // Couleur de base (optionnel)
             blurFactor: 1, // Facteur de flou (optionnel)
             speed: 1, // Vitesse de l'animation (optionnel)
             zoom: 0.1 // Zoom (optionnel)

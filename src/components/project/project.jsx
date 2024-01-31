@@ -9,6 +9,11 @@ export const Project = () => {
                     <h3>Projects</h3>
                     <p>See my works !</p>
                 </div>
+                <div className='project-content'>
+                    <div className='project-carrousel'>
+
+                    </div>
+                </div>
             </div>
         </section>
     )

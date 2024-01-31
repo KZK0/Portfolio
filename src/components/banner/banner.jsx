@@ -5,7 +5,7 @@ import './banner.scss';
 export const Banner = () => {
     const vantaRef = useRef(null);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const words = ["Junior Developer", "Learner", "& Creative."];
+    const words = ["Front-End Developer", "Learner", "& Creative."];
 
     useEffect(() => {
         // Initialise l'effet de brouillard sur l'élément avec la classe banner-section
@@ -22,7 +22,7 @@ export const Banner = () => {
             // Vous pouvez ajuster ces valeurs selon vos préférences
         });
 
-        // Change le mot affiché toutes les 5 secondes
+        // Change le mot affiché toutes les 3 secondes
         const interval = setInterval(() => {
             setCurrentWordIndex(currentIndex => (currentIndex + 1) % words.length);
         }, 3000);

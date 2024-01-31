@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "title": "Title Project",
+        "cover": "",
+        "description": "",
+        "pictures": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "for": {
+            "name": "OPENCLASSROOMS"
+        },
+        "context": "Project from my formation",
+        "tags": [
+            {
+                "name": "HTML",
+                "style": {
+                    "color": "blue",
+                    "font-weight": "bold"
+                },
+                "icon": "fa fa-code"
+            },
+            {
+                "name": "CSS",
+                "style": {
+                    "color": "green",
+                    "font-style": "italic"
+                },
+                "icon": "fa fa-css3"
+            }
+        ]
+    }
+]
