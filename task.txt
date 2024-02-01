@@ -4,17 +4,20 @@
 
 TÂCHES PRINCIPALES:
 
-- Travailler sur la banner
+- Travailler sur la banner (détails)
 - Ajout loader
-- Ajout des réseaux
-- Ajout potentiel bouton
+- Ajout des réseaux X
+- Ajout potentiel bouton ?
+- Finir la partie projet (Carrousel)
 
 
 TÂCHES SECONDAIRES:
 
--
--
--
+- Finir le fichier JSON
+- Faire les images avec une IA
+- Redimmensionner les images + Webp
+- Ajouter animation bouton Carrousel
+- Ajouter shadow + anim sur les boutons ?
 
 
 DIVERS/IDEES:

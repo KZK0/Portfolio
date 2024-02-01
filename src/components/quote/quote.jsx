@@ -21,15 +21,9 @@ export const Quote = () => {
             // Vous pouvez ajuster ces valeurs selon vos préférences
         });
 
-        // Change le mot affiché toutes les 5 secondes
-        const interval = setInterval(() => {
-            setCurrentWordIndex(currentIndex => (currentIndex + 1) % words.length);
-        }, 3000);
-
         // Nettoie l'effet de brouillard et arrête l'intervalle lors du démontage du composant
         return () => {
             if (vantaRef.current) vantaRef.current.destroy();
-            clearInterval(interval);
         };
     }, []); // Cette fonction s'exécute une seule fois après le premier rendu
 
@@ -37,7 +31,7 @@ export const Quote = () => {
         <blockquote className='quote-section'>
             <div className='quote-content'>
                 <h5>My Favorite Quote:</h5>
-                <p><i class="fa-solid fa-quote-left"></i> We grow after we finish learning. <i class="fa-solid fa-quote-right"></i></p>
+                <p><i className="fa-solid fa-quote-left"></i> We grow after we finish learning. <i className="fa-solid fa-quote-right"></i></p>
                 <h6>By: ich weiß nicht !</h6>
             </div>
         </blockquote>

@@ -40,7 +40,7 @@ export const Banner = () => {
                 <h1>Hello, im <span className='banner-text-style'>KZKO</span>.</h1>
                 <h2>A French <span className='word-animation'>{words[currentWordIndex]}</span></h2>
                 <p className='banner-paragraph'>I love web development and design for its fusion of user interface and user experience UI & UX. Every detail is meticulously thought out to create seamless and aesthetically pleasing online experiences.</p>
-                <i class="fa-solid fa-caret-down"></i>
+                <i className="fa-solid fa-caret-down"></i>
             </div>
         </section>
     );

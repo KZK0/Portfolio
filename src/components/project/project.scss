@@ -23,7 +23,7 @@
             max-width: 70%;
             margin: 0 auto;
             margin-top: 80px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             position: relative;
 
             &::before {
@@ -53,6 +53,76 @@
                 top: 40px;
                 left: 30px;
                 filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+            }
+        }
+
+        .project-content {
+
+            max-width: 60%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+
+            .project-carrousel {
+
+                width: 100%;
+                height: 500px;
+                border: 1px solid $border-light-grey;
+                filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+
+                img {
+
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .project-btn {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: 30px 0;
+
+                button {
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 25px;
+                    width: 220px;
+                    padding: 15px 20px;
+                    background-color: transparent;
+                    border: 1px solid $border-light-grey;
+                    border-radius: 3px;
+                    color: $border-light-grey;
+                    font-family: $font-main-text;
+                    font-size: 1em;
+                    transition: 0.4s ease;
+
+                    i {
+                        font-size: 1em;
+                        color: $border-light-grey;
+                        transition: 0.4s ease;
+                    }
+
+                    &:hover {
+
+                        color: $border-btn-after;
+                        border-color: $border-btn-after;
+                        background-color: $background-btn;
+                        cursor: pointer;
+
+                        i {
+                            color: $border-btn-after;
+                        }
+                    }
+                }
             }
         }
     }

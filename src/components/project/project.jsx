@@ -11,7 +11,11 @@ export const Project = () => {
                 </div>
                 <div className='project-content'>
                     <div className='project-carrousel'>
-
+                        <img src="" alt="Pictures of the project" />
+                    </div>
+                    <div className='project-btn'>
+                        <button><i className="fa-solid fa-caret-left"></i> Previous Project</button>
+                        <button>Next Project <i className="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
             </div>

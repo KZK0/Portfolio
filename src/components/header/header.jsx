@@ -35,7 +35,7 @@ export const Header = () => {
                     <NavLink className='nav-btn' to="/">Home</NavLink>
                     <NavLink className='nav-btn' to="/Project">Projects</NavLink>
                     <hr className="hr-nav-two" />
-                    <NavLink className='nav-contact-btn' to="/Contact">Contact Me<i class="fa-regular fa-envelope"></i></NavLink>
+                    <NavLink className='nav-contact-btn' to="/Contact">Contact Me<i className="fa-regular fa-envelope"></i></NavLink>
                 </div>
             </nav>
         </header>
