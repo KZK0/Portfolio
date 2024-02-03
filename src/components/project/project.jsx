@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import './project.scss';
 
 export const Project = ({ data }) => {
@@ -18,6 +19,10 @@ export const Project = ({ data }) => {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className='project-undercontent'>
+                    <p>NB: These projects are selected, to see all of my projects, click on the button <i className="fa-solid fa-angle-right"></i></p>
+                    <NavLink className='nav-btn-project' to="/Project">View all projects<i className="fa-regular fa-folder-open"></i></NavLink>
                 </div>
             </div>
         </section>

@@ -71,10 +71,9 @@
                 height: 500px;
                 border: 1px solid $border-light-grey;
                 border-radius: 5px;
-                mix-blend-mode: luminosity;
                 position: relative;
                 overflow: hidden;
-                transition: width 0.6s linear;
+                transition: width 0.4s linear;
 
                 &:first-child {
 
@@ -108,12 +107,12 @@
                     bottom: 0;
                     left: 0;
                     padding: 15px;
-                    background-color: rgba(236, 236, 236, 0.034);
+                    background-color: rgba(53, 53, 53, 0.192);
                     backdrop-filter: blur(10px);
                     transition: width 0.6s linear;
 
                     h3 {
-                        color: $color-police-main;
+                        color: $color-primary;
                         font-family: $font-main-text;
                         font-size: 1.2em;
                         margin: 0;
@@ -121,10 +120,71 @@
                     }
 
                     p {
-                        color: $color-police-main;
+                        color: $color-primary;
                         font-family: $font-main-text;
                         font-size: 1em;
                         margin: 0;
+                    }
+                }
+            }
+        }
+
+        .project-undercontent {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 55%;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            p {
+                font-family: system-ui;
+                color: $color-police-main;
+                font-size: 1.1em;
+                font-weight: 600;
+                margin: 0;
+                width: 60%;
+
+                i {
+                    color: $color-police-main;
+                    margin: 0;
+                }
+            }
+
+            .nav-btn-project {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 20px;
+                width: 250px;
+                padding: 12px 0px;
+                border: 1px solid $border-light-grey;
+                border-radius: 2px;
+                background: none;
+                color: $border-light-grey;
+                font-family: system-ui;
+                font-size: 1.3em;
+                font-weight: 600;
+                transition: 0.4s ease;
+                text-decoration: none;
+
+                i {
+                    color: $border-light-grey;
+                    transition: 0.4s ease;
+                }
+
+                &:hover {
+                    color: $border-btn-after;
+                    border-color: $border-btn-after;
+                    background-color: $background-btn;
+                    cursor: pointer;
+
+                    i {
+                        color: $border-btn-after;
                     }
                 }
             }
