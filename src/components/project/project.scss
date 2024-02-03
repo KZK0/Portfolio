@@ -9,12 +9,13 @@
 
 .project-section {
 
-    margin-bottom: 50px;
+    border-bottom: 1px solid $border-light-grey;
 
     .project-bloc {
 
         width: 100%;
         height: 100%;
+        margin-bottom: 50px;
         background-color: $color-primary;
         border-top: 1px solid $border-light-grey;
 
@@ -57,70 +58,73 @@
         }
 
         .project-content {
-
-            max-width: 60%;
+            max-width: 55%;
             display: flex;
             justify-content: center;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
+            gap: 10px;
             margin: 0 auto;
 
-            .project-carrousel {
-
-                width: 100%;
+            .project-elm {
+                width: 10%;
                 height: 500px;
                 border: 1px solid $border-light-grey;
-                filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+                border-radius: 5px;
+                mix-blend-mode: luminosity;
+                position: relative;
+                overflow: hidden;
+                transition: width 0.6s linear;
+
+                &:first-child {
+
+                    width: 100%;
+
+                    .under-cover {
+
+                        opacity: 1;
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    width: 100%;
+
+                    .under-cover {
+                        opacity: 1;
+                    }
+                }
 
                 img {
-
                     object-fit: cover;
                     width: 100%;
                     height: 100%;
+                    border-radius: 2px;
                 }
-            }
 
-            .project-btn {
+                .under-cover {
+                    opacity: 0;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 15px;
+                    background-color: rgba(236, 236, 236, 0.034);
+                    backdrop-filter: blur(10px);
+                    transition: width 0.6s linear;
 
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                margin: 30px 0;
-
-                button {
-
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    gap: 25px;
-                    width: 220px;
-                    padding: 15px 20px;
-                    background-color: transparent;
-                    border: 1px solid $border-light-grey;
-                    border-radius: 3px;
-                    color: $border-light-grey;
-                    font-family: $font-main-text;
-                    font-size: 1em;
-                    transition: 0.4s ease;
-
-                    i {
-                        font-size: 1em;
-                        color: $border-light-grey;
-                        transition: 0.4s ease;
+                    h3 {
+                        color: $color-police-main;
+                        font-family: $font-main-text;
+                        font-size: 1.2em;
+                        margin: 0;
+                        margin-bottom: 10px;
                     }
 
-                    &:hover {
-
-                        color: $border-btn-after;
-                        border-color: $border-btn-after;
-                        background-color: $background-btn;
-                        cursor: pointer;
-
-                        i {
-                            color: $border-btn-after;
-                        }
+                    p {
+                        color: $color-police-main;
+                        font-family: $font-main-text;
+                        font-size: 1em;
+                        margin: 0;
                     }
                 }
             }

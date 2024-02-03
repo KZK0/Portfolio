@@ -14,16 +14,16 @@ export const About = () => {
                         <h4><span>Hello,</span> im Mehdi !</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto sit fugit quas necessitatibus odit, sapiente excepturi nesciunt, beatae, deserunt reprehenderit deleniti accusantium repudiandae. Vitae odit quaerat amet illum unde, aspernatur in reprehenderit quas nostrum tenetur. Minus quod mollitia laudantium!</p>
                         <p className='about-margin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, veniam?</p>
-                        <button>Download CV <i className="fa-regular fa-file-pdf"></i></button>
+                        <button aria-label='download CV'>Download CV <i className="fa-regular fa-file-pdf"></i></button>
                     </div>
                     <div className='about-card-scnd'>
                         <div className='card-img'>
 
                         </div>
                         <div className='card-link'>
-                            <button><i className="fa-brands fa-github"></i></button>
-                            <button><i className="fa-brands fa-linkedin"></i></button>
-                            <button><i className="fa-solid fa-envelope"></i></button>
+                            <button aria-label='link to github'><i className="fa-brands fa-github"></i></button>
+                            <button aria-label='link to linkedin'><i className="fa-brands fa-linkedin"></i></button>
+                            <button aria-label='link to mail'><i className="fa-solid fa-envelope"></i></button>
                         </div>
                         <div className='card-info'>
                             <p><i className="fa-solid fa-location-dot"></i><span>From:</span> France, Nord (59)</p>

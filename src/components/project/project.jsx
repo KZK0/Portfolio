@@ -1,7 +1,6 @@
 import './project.scss';
 
-
-export const Project = () => {
+export const Project = ({ data }) => {
     return (
         <section className='project-section'>
             <div className='project-bloc'>
@@ -10,13 +9,15 @@ export const Project = () => {
                     <p>See my works !</p>
                 </div>
                 <div className='project-content'>
-                    <div className='project-carrousel'>
-                        <img src="" alt="Pictures of the project" />
-                    </div>
-                    <div className='project-btn'>
-                        <button><i className="fa-solid fa-caret-left"></i> Previous Project</button>
-                        <button>Next Project <i className="fa-solid fa-caret-right"></i></button>
-                    </div>
+                    {data.map((item) => (
+                        <div key={item.id} className='project-elm'>
+                            <img src={item.cover} alt="Pictures of the project" />
+                            <div className='under-cover'>
+                                <h3>{item.title}</h3>
+                                <p>{item.description}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

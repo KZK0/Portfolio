@@ -23,7 +23,7 @@ export const Header = () => {
             <nav className='header-nav'>
                 <div className="header-first-bloc">
                     <NavLink to="/">
-                        <button className="nav-logo-btn">
+                        <button aria-label='navigate to homepage' className="nav-logo-btn">
                             <p className="nav-logo-text"><span className="nav-logo-span">K</span>ZKO</p>
                             <hr className="nav-logo-hr" />
                             <p className="nav-logo-scnd-text">Portfolio.</p>
