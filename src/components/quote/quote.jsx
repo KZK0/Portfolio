@@ -32,7 +32,7 @@ export const Quote = () => {
             <div className='quote-content'>
                 <h5>My Favorite Quote:</h5>
                 <p><i className="fa-solid fa-quote-left"></i> We grow after we finish learning. <i className="fa-solid fa-quote-right"></i></p>
-                <h6>By: ich weiß nicht !</h6>
+                <h6>By: I forgot</h6>
             </div>
         </blockquote>
     )

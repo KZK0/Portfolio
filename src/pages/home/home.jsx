@@ -3,6 +3,7 @@ import { Banner } from '../../components/banner/banner';
 import { About } from '../../components/about/about';
 import { Quote } from '../../components/quote/quote';
 import { Project } from '../../components/project/project';
+import { Skill } from '../../components/skill/skill';
 import DataProjects from '../../data/DataProjects.json';
 import './home.scss'
 
@@ -15,6 +16,7 @@ export const Index = () => {
             <About />
             <Quote />
             <Project data={DataProjects} />
+            <Skill />
         </div>
     );
 };

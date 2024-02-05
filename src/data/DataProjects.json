@@ -3,6 +3,7 @@
         "id": "1",
         "title": "Title Project",
         "cover": "/src/assets/images/covers/edward-cisneros-webp.webp",
+        "alt": "Picture of the first project",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto sit fugit quas necessitatibus odit, sapiente excepturi nesciunt, beatae,",
         "pictures": [
             "",
@@ -11,33 +12,18 @@
             "",
             ""
         ],
-        "for": {
-            "name": "OPENCLASSROOMS"
-        },
+        "for": "OPENCLASSROOMS",
         "context": "Project from my formation",
         "tags": [
-            {
-                "name": "HTML",
-                "style": {
-                    "color": "blue",
-                    "font-weight": "bold"
-                },
-                "icon": "fa fa-code"
-            },
-            {
-                "name": "CSS",
-                "style": {
-                    "color": "green",
-                    "font-style": "italic"
-                },
-                "icon": "fa fa-css3"
-            }
+            "HTML5",
+            "CSS3"
         ]
     },
     {
         "id": "2",
         "title": "Title Project 2",
         "cover": "/src/assets/images/covers/ryoji-iwata-wepb.webp",
+        "alt": "Picture of the first project",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto sit fugit quas necessitatibus odit, sapiente excepturi nesciunt, beatae,",
         "pictures": [
             "",
@@ -46,33 +32,18 @@
             "",
             ""
         ],
-        "for": {
-            "name": "OPENCLASSROOMS"
-        },
+        "for": "OPENCLASSROOMS",
         "context": "Project from my formation",
         "tags": [
-            {
-                "name": "HTML",
-                "style": {
-                    "color": "blue",
-                    "font-weight": "bold"
-                },
-                "icon": "fa fa-code"
-            },
-            {
-                "name": "CSS",
-                "style": {
-                    "color": "green",
-                    "font-style": "italic"
-                },
-                "icon": "fa fa-css3"
-            }
+            "HTML5",
+            "JavaScript"
         ]
     },
     {
         "id": "3",
         "title": "Title Project 3",
         "cover": "/src/assets/images/covers/nicholas-green-webp.webp",
+        "alt": "Picture of the first project",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto sit fugit quas necessitatibus odit, sapiente excepturi nesciunt, beatae,",
         "pictures": [
             "",
@@ -81,27 +52,11 @@
             "",
             ""
         ],
-        "for": {
-            "name": "OPENCLASSROOMS"
-        },
+        "for": "OPENCLASSROOMS",
         "context": "Project from my formation",
         "tags": [
-            {
-                "name": "HTML",
-                "style": {
-                    "color": "blue",
-                    "font-weight": "bold"
-                },
-                "icon": "fa fa-code"
-            },
-            {
-                "name": "CSS",
-                "style": {
-                    "color": "green",
-                    "font-style": "italic"
-                },
-                "icon": "fa fa-css3"
-            }
+            "HTML5",
+            "React"
         ]
     }
 ]

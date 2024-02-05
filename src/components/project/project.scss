@@ -9,13 +9,11 @@
 
 .project-section {
 
-    border-bottom: 1px solid $border-light-grey;
-
     .project-bloc {
 
         width: 100%;
         height: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         background-color: $color-primary;
         border-top: 1px solid $border-light-grey;
 
@@ -58,133 +56,151 @@
         }
 
         .project-content {
-            max-width: 55%;
+            max-width: 70%;
             display: flex;
             justify-content: center;
             flex-direction: row;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
             margin: 0 auto;
+            position: relative;
 
-            .project-elm {
-                width: 10%;
-                height: 500px;
-                border: 1px solid $border-light-grey;
-                border-radius: 5px;
-                position: relative;
-                overflow: hidden;
-                transition: width 0.4s linear;
-
-                &:first-child {
-
-                    width: 100%;
-
-                    .under-cover {
-
-                        opacity: 1;
-                    }
-                }
-
-                &:hover {
-                    cursor: pointer;
-                    width: 100%;
-
-                    .under-cover {
-                        opacity: 1;
-                    }
-                }
-
-                img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 2px;
-                }
-
-                .under-cover {
-                    opacity: 0;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    padding: 15px;
-                    background-color: rgba(53, 53, 53, 0.192);
-                    backdrop-filter: blur(10px);
-                    transition: width 0.6s linear;
-
-                    h3 {
-                        color: $color-primary;
-                        font-family: $font-main-text;
-                        font-size: 1.2em;
-                        margin: 0;
-                        margin-bottom: 10px;
-                    }
-
-                    p {
-                        color: $color-primary;
-                        font-family: $font-main-text;
-                        font-size: 1em;
-                        margin: 0;
-                    }
-                }
-            }
-        }
-
-        .project-undercontent {
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 55%;
-            margin: 0 auto;
-            margin-top: 30px;
-
-            p {
-                font-family: system-ui;
-                color: $color-police-main;
-                font-size: 1.1em;
-                font-weight: 600;
-                margin: 0;
-                width: 60%;
-
-                i {
-                    color: $color-police-main;
-                    margin: 0;
-                }
-            }
-
-            .nav-btn-project {
+            .content-firstbloc {
 
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                gap: 20px;
-                width: 250px;
-                padding: 12px 0px;
-                border: 1px solid $border-light-grey;
-                border-radius: 2px;
-                background: none;
-                color: $border-light-grey;
-                font-family: system-ui;
-                font-size: 1.3em;
-                font-weight: 600;
-                transition: 0.4s ease;
-                text-decoration: none;
+                justify-content: baseline;
+                width: 40%;
 
-                i {
+                .nav-btn-project {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 20px;
+                    width: 230px;
+                    padding: 12px 0px;
+                    border: 1px solid $border-light-grey;
+                    border-radius: 2px;
+                    background: none;
                     color: $border-light-grey;
+                    font-family: system-ui;
+                    font-size: 1.3em;
+                    font-weight: 600;
                     transition: 0.4s ease;
-                }
-
-                &:hover {
-                    color: $border-btn-after;
-                    border-color: $border-btn-after;
-                    background-color: $background-btn;
-                    cursor: pointer;
+                    text-decoration: none;
+                    position: absolute;
+                    top: 0;
+                    left: 30px;
 
                     i {
+                        color: $border-light-grey;
+                        transition: 0.4s ease;
+                    }
+
+                    &:hover {
                         color: $border-btn-after;
+                        border-color: $border-btn-after;
+                        background-color: $background-btn;
+                        cursor: pointer;
+
+                        i {
+                            color: $border-btn-after;
+                        }
+                    }
+                }
+            }
+
+
+            .project-column {
+
+                display: flex;
+                flex-direction: column;
+
+                .content-scndbloc {
+
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    width: 100%;
+                    max-width: 90%;
+                    border-left: 1px solid $border-light-grey;
+                    border-bottom: 1px solid $border-light-grey;
+
+                    &:nth-child(2) {
+                        flex-direction: row-reverse;
+                        border-left: none;
+                        border-right: 1px solid $border-light-grey;
+                        background: linear-gradient(to bottom, $color-primary, rgba(54, 54, 54, 0.295));
+                    }
+
+                    .bloc-one {
+
+                        display: flex;
+                        flex-direction: column;
+                        padding: 40px 30px;
+                        gap: 30px;
+                        width: 45%;
+                        text-decoration: none;
+
+                        &:hover {
+
+                            cursor: pointer;
+
+                            i,
+                            h3,
+                            p {
+                                filter: opacity(0.7);
+                            }
+                        }
+
+                        .bloc-one-content {
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            h3 {
+                                font-size: 1.7em;
+                                font-family: system-ui;
+                                color: $color-police-main;
+                                margin: 0;
+                                transition: 0.4s ease;
+                            }
+
+                            i {
+                                font-size: 1.5em;
+                                color: $color-police-main;
+                                margin: 0;
+                                transition: 0.4s ease;
+                            }
+                        }
+
+                        p {
+                            font-size: 1em;
+                            font-family: system-ui;
+                            color: $color-police-main;
+                            margin: 0;
+                            width: 95%;
+                            transition: 0.4s ease;
+                        }
+                    }
+
+                    .bloc-two {
+
+                        width: 55%;
+                        height: 400px;
+                        padding: 20px;
+                        border-left: 1px solid $border-light-grey;
+
+                        img {
+
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 2px;
+                            border: 1px solid $border-light-grey;
+                        }
                     }
                 }
             }
