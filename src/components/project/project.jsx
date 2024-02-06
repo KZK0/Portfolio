@@ -23,13 +23,15 @@ export const Project = ({ data }) => {
                                     </div>
                                     <div className="context-content">
                                         <div className="context-one">
-                                            <p>For: {item.for}</p>
+                                            <p><span>For: </span>{item.for}</p>
                                             <p>{item.description}</p>
                                         </div>
                                         <div className="context-two">
                                             <p>{item.context}</p>
                                             <ul>
-                                                <li>{item.tags}</li>
+                                                {item.tags.map((tag, index) => (
+                                                    <li key={index}>{tag}</li>
+                                                ))}
                                             </ul>
                                         </div>
                                     </div>

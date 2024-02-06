@@ -8,6 +8,7 @@ TÂCHES PRINCIPALES:
 - Ajout loader
 - Finir la partie projet
 - Finir la section skill
+- Faire la section contact
 - Faire le footer
 
 

@@ -2,6 +2,7 @@ import './skill.scss';
 
 
 export const Skill = () => {
+
     return (
         <section className='skill-section'>
             <div className='skill-bloc'>

@@ -13,7 +13,7 @@
 
         width: 100%;
         height: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 100px;
         background-color: $color-primary;
         border-top: 1px solid $border-light-grey;
 
@@ -150,7 +150,7 @@
                             i,
                             h3,
                             p {
-                                filter: opacity(0.7);
+                                filter: opacity(0.5);
                             }
                         }
 
@@ -169,20 +169,75 @@
                             }
 
                             i {
-                                font-size: 1.5em;
+                                font-size: 1.2em;
                                 color: $color-police-main;
                                 margin: 0;
                                 transition: 0.4s ease;
                             }
                         }
 
-                        p {
-                            font-size: 1em;
-                            font-family: system-ui;
-                            color: $color-police-main;
-                            margin: 0;
-                            width: 95%;
-                            transition: 0.4s ease;
+                        .context-content {
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 100%;
+                            height: 100%;
+
+                            .context-one {
+
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                p {
+                                    font-size: 1em;
+                                    font-family: system-ui;
+                                    color: $color-police-main;
+                                    margin: 0;
+                                    width: 95%;
+                                    transition: 0.4s ease;
+
+                                    span {
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+
+                            .context-two {
+
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                p {
+                                    font-size: 1em;
+                                    font-family: system-ui;
+                                    color: $color-police-main;
+                                    margin: 0;
+                                    width: 95%;
+                                    transition: 0.4s ease;
+                                }
+
+                                ul {
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 10px;
+
+                                    li {
+                                        font-size: 0.8em;
+                                        font-family: system-ui;
+                                        color: $color-police-main;
+                                        padding: 5px 10px;
+                                        border: 1px solid $border-light-grey;
+                                        border-radius: 2px;
+                                        background-color: $background-btn;
+                                        margin: 0;
+                                        transition: 0.4s ease;
+                                    }
+                                }
+                            }
                         }
                     }
 
