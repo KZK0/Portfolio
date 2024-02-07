@@ -6,7 +6,6 @@ TÂCHES PRINCIPALES:
 
 - Travailler sur la banner (détails)
 - Ajout loader
-- Finir la partie projet
 - Finir la section skill
 - Faire la section contact
 - Faire le footer

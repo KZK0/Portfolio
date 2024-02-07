@@ -1,10 +1,10 @@
 [
     {
         "id": "1",
-        "title": "Title Project",
-        "cover": "/src/assets/images/covers/edward-cisneros-webp.webp",
+        "title": "Sophie Bluel - Portfolio",
+        "cover": "/src/assets/images/covers/new-sb-prjct.webp",
         "alt": "Picture of the first project",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto sit fugit quas necessitatibus odit, sapiente excepturi nesciunt, beatae,",
+        "description": "At ArchiWebos, I'm reinforcing a team to design the portfolio website for an interior architect. My tasks include developing the presentation page for the architect's work, creating the administrator login page, and designing a modal for uploading media.",
         "pictures": [
             "",
             "",
@@ -16,15 +16,18 @@
         "context": "Web Application",
         "tags": [
             "HTML5",
-            "CSS3"
+            "CSS3",
+            "JAVASCRIPT",
+            "NODE.JS",
+            "NPM"
         ]
     },
     {
         "id": "2",
-        "title": "Title Project 2",
-        "cover": "/src/assets/images/covers/ryoji-iwata-wepb.webp",
-        "alt": "Picture of the first project",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto sit fugit quas necessitatibus odit, sapiente excepturi nesciunt, beatae,",
+        "title": "Kasa",
+        "cover": "/src/assets/images/covers/new-kasa-prjct.webp",
+        "alt": "Picture of the second project",
+        "description": "For Kasa, I'm tasked with building their apartment rental platform using React. I'm creating components and routes following Figma mockups, while integrating features like photo gallery scrolling and Collapse management.",
         "pictures": [
             "",
             "",
@@ -36,15 +39,18 @@
         "context": "Web Application",
         "tags": [
             "HTML5",
-            "JavaScript"
+            "SCSS",
+            "REACT",
+            "NODE.JS",
+            "NPM"
         ]
     },
     {
         "id": "3",
-        "title": "Title Project 3",
-        "cover": "/src/assets/images/covers/nicholas-green-webp.webp",
-        "alt": "Picture of the first project",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto sit fugit quas necessitatibus odit, sapiente excepturi nesciunt, beatae,",
+        "title": "724 events",
+        "cover": "/src/assets/images/covers/new-724-prjct.webp",
+        "alt": "Picture of the third project",
+        "description": "724events has hired me to complete the new version of their one-page showcase website. Following the departure of a previous developer, I'm tasked with resolving remaining bugs, particularly those related to the carousel, event category selection, and displaying the latest event in the footer.",
         "pictures": [
             "",
             "",
@@ -53,10 +59,13 @@
             ""
         ],
         "for": "OPENCLASSROOMS",
-        "context": "Web Application",
+        "context": "Web Application - Debugging",
         "tags": [
             "HTML5",
-            "React"
+            "SCSS",
+            "REACT",
+            "YARN",
+            "NVM"
         ]
     }
 ]
