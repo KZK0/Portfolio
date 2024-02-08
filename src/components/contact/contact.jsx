@@ -49,7 +49,7 @@ export const Contact = () => {
                             <input type="email" name='Mail' placeholder='E-MAIL *' required />
                             <label htmlFor="Message"></label>
                             <textarea name="Message" cols="30" rows="10" placeholder='ENTER YOUR MESSAGE *' required></textarea>
-                            <input type="submit" value="Submit" id='submit-btn' />
+                            <input type="submit" value="Let's Go !" id='submit-btn' />
                         </form>
                     </div>
                 </div>
