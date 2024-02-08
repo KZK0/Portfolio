@@ -39,7 +39,7 @@ export const About = () => {
                                 <img src="/src/assets/images/logos/icons8-allemagne-48.png" alt="Drapeau de l'allemagne'" />
                             </p>
                             <div className='available-card'>
-                                <p>AVAILABLE FOR WORK</p>
+                                <p>#OPEN TO WORK</p>
                                 <i className="fa-solid fa-check"></i>
                             </div>
                         </div>
