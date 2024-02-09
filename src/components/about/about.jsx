@@ -1,3 +1,4 @@
+import { Link as ScrollLink } from 'react-scroll';
 import './about.scss';
 
 export const About = () => {
@@ -29,7 +30,9 @@ export const About = () => {
                         <div className='card-link'>
                             <button onClick={redirectToGithub} aria-label='link to github'><i className="fa-brands fa-github"></i></button>
                             <button onClick={redirectToLinkedin} aria-label='link to linkedin'><i className="fa-brands fa-linkedin"></i></button>
-                            <button aria-label='link to mail'><i className="fa-solid fa-envelope"></i></button>
+                            <ScrollLink activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0}>
+                                <button aria-label='link to mail'><i className="fa-solid fa-envelope"></i></button>
+                            </ScrollLink>
                         </div>
                         <div className='card-info'>
                             <p><i className="fa-solid fa-location-dot"></i><span>From:</span> France, Nord (59)</p>

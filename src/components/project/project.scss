@@ -251,6 +251,7 @@
                         padding: 20px;
                         border-left: 1px solid $border-light-grey;
                         position: relative;
+                        user-select: none;
 
 
                         &::before {

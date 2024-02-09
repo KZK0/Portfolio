@@ -4,10 +4,8 @@
 
 TÂCHES PRINCIPALES:
 
-- Travailler sur la banner (détails)
 - Ajout loader
 - Finir la section skill
-- Finir le footer
 
 
 TÂCHES SECONDAIRES:
@@ -15,6 +13,8 @@ TÂCHES SECONDAIRES:
 - Finir le fichier JSON
 - Faire les images avec une IA
 - Redimmensionner les images + Webp
+- Retravailler le footer
+- Retravailler sur la banner (détails)
 
 
 DIVERS/IDEES:
@@ -31,3 +31,4 @@ DIVERS/IDEES:
 PROBLEMES:
 
 - Lors du clique sur le bouton contact me depuis la page projet, rien ne se passe.
+- Solution safe pour liée mon email pro avec le form de contact

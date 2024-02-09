@@ -9,146 +9,42 @@
 
 .footer-section {
 
-    border-top: 1px solid $border-light-grey;
     background: linear-gradient(to bottom, $color-primary, rgba(41, 41, 41, 0.301));
+    user-select: none;
 
     .footer-first-bloc {
 
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        font-family: $font-main-text;
-        color: $color-police-main;
-        margin: 0 auto;
-        padding: 10px 0;
-
-        .footer-left {
-
-            width: 10%;
-            padding: 0 50px;
-
-            h5 {
-                font-size: 1.2em;
-                margin: 0;
-            }
-
-            ul {
-
-                text-align: left;
-
-                li {
-                    font-size: 0.8em;
-                    margin: 5px 0;
-                    position: relative;
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        height: 1px;
-                        width: 100%;
-                        background: $border-light-grey;
-                    }
-                }
-            }
-        }
-
-        .footer-mid {
-
-            width: 10%;
-            padding: 0 50px;
-            border-left: 1px solid $border-light-grey;
-            border-right: 1px solid $border-light-grey;
-
-            h5 {
-                font-size: 1.2em;
-                margin: 0;
-            }
-
-            ul {
-
-                text-align: left;
-
-                li {
-                    font-size: 0.8em;
-                    margin: 5px 0;
-                    position: relative;
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        height: 1px;
-                        width: 100%;
-                        background: $border-light-grey;
-                    }
-                }
-            }
-        }
-
-        .footer-right {
-
-            width: 10%;
-            padding: 0 50px;
-
-            h5 {
-                font-size: 1.2em;
-                margin: 0;
-            }
-
-            ul {
-
-                text-align: left;
-
-                li {
-                    font-size: 0.8em;
-                    margin: 5px 0;
-                    position: relative;
-
-                    &:hover {
-                        cursor: pointer;
-
-                        &::before {
-                            width: 100%;
-                        }
-                    }
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        height: 1px;
-                        width: 0%;
-                        background: $border-light-grey;
-                        transition: 0.4s linear;
-                    }
-                }
-            }
-        }
-    }
-
-
-    .footer-scnd-bloc {
-
-        display: flex;
-        justify-content: center;
         border-top: 1px solid $border-light-grey;
         background: rgb(15, 15, 15);
         padding: 10px 0;
         overflow: hidden;
 
 
-        p {
+        .first-paragraph {
             color: $color-police-main;
             font-size: 0.8em;
             font-family: $font-title;
             margin: 0;
+            margin-bottom: -2px;
 
             // i {}
+        }
+
+        hr {
+            height: 10px;
+            margin: 0 3px;
+        }
+
+        .scnd-paragraph {
+
+            color: $color-police-main;
+            font-size: 0.8em;
+            font-family: $font-title;
+            margin: 0;
 
             span {
                 font-size: 1.2em;
