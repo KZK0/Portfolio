@@ -19,7 +19,7 @@ export const About = () => {
                 </div>
                 <div className='about-card'>
                     <div className='about-card-first'>
-                        <h4><span>Hello,</span> im Mehdi !</h4>
+                        <h4><span>Hey,</span> im Mehdi !</h4>
                         <p>I'm a passionate 27 year old front-end developer from northern France, where my meticulousness and perfectionism shine through in every line of code. Beyond coding, I enjoy exploring foreign languages, immersing myself in reading, savoring music, and delving into captivating video game worlds. My portfolio reflects my unwavering commitment to excellence and my constant desire to innovate.</p>
                         <p className='about-margin'>Would you like to learn more about my background ?</p>
                         <a className='btn-cv' href="/src/assets/pdf/NCV.pdf" download='CV - Mehdi Miraoui'>Download CV <i className="fa-regular fa-file-pdf"></i></a>

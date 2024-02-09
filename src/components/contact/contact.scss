@@ -7,7 +7,7 @@
 // =============================================================================
 
 
-.contact-section {
+#contact-section {
 
     .contact-bloc {
 
@@ -60,8 +60,9 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            max-width: 70%;
+            max-width: 60%;
             margin: 0 auto;
+            gap: 35px;
 
             .content-left {
 
@@ -70,18 +71,22 @@
                 text-align: left;
                 flex-direction: column;
                 align-items: center;
-                width: 50%;
+                background: url(/src/assets/images/logos/Design-removebg-preview.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 40%;
                 gap: 40px;
 
                 .content-left-ltl-bloc {
 
                     display: flex;
                     flex-direction: column;
-                    width: 70%;
+                    width: 100%;
 
                     h4 {
                         font-family: $font-text;
-                        color: rgb(29, 29, 29);
+                        color: rgba(70, 70, 70, 0.459);
                         font-size: 1.5em;
                         margin: 0;
                         margin-left: 35px;
@@ -106,7 +111,7 @@
                             bottom: 0;
                             left: 0;
                             height: 1px;
-                            width: 95%;
+                            width: 85%;
                             background: $border-light-grey;
                         }
 
@@ -125,7 +130,7 @@
                     justify-content: flex-start;
                     align-items: flex-start;
                     gap: 5px;
-                    width: 70%;
+                    width: 100%;
 
                     button {
 
@@ -161,10 +166,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                width: 50%;
-                border-left: 1px solid $border-light-grey;
-                background: rgba(255, 255, 255, 0.021);
-                border-radius: 0px 10px 10px 0px;
+                width: 60%;
+                background: linear-gradient(to top, $color-primary, rgba(51, 51, 51, 0.37));
+                box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+                border-radius: 5px;
                 padding: 15px 0;
 
                 .content-right-first {
@@ -185,6 +190,7 @@
                         margin: 0;
 
                         i {
+                            font-size: 0.8em;
                             color: rgb(255, 217, 0);
                         }
                     }
@@ -209,7 +215,6 @@
                         font-family: $font-text;
                         color: $color-police-main;
                         font-size: 1.2em;
-                        margin-bottom: 5px;
                     }
 
 
@@ -237,7 +242,7 @@
                         font-family: $font-main-text;
                         color: $color-police-main;
                         font-size: 1.2em;
-                        width: 100%;
+                        width: 90%;
                         height: 100px;
                         border: none;
                         border-bottom: 1px solid $border-light-grey;
@@ -256,18 +261,37 @@
 
                     #submit-btn {
 
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 15px;
                         background-color: transparent;
                         border: 1px solid $border-light-grey;
                         border-radius: 2px;
-                        width: 30%;
+                        width: 22%;
                         height: 100%;
                         padding: 8px;
+                        color: $border-light-grey;
+                        font-size: 1.2em;
                         transition: 0.4s ease;
+
+                        i {
+                            color: $border-light-grey;
+                            font-size: 1.1em;
+                            transition: 0.4s linear;
+                        }
 
                         &:hover {
                             background-color: $background-btn;
                             border-color: $color-police-main;
+                            color: $color-police-main;
                             cursor: pointer;
+
+                            i {
+                                color: $color-police-main;
+                                transform: rotate(50deg);
+                            }
                         }
                     }
                 }

@@ -6,6 +6,7 @@ import { Project } from '../../components/project/project';
 import { Skill } from '../../components/skill/skill';
 import { Separate } from '../../components/separate/separate';
 import { Contact } from '../../components/contact/contact';
+import { Footer } from '../../components/footer/footer';
 import DataProjects from '../../data/DataProjects.json';
 import './home.scss'
 
@@ -21,6 +22,7 @@ export const Index = () => {
             <Skill />
             <Separate />
             <Contact />
+            <Footer />
         </div>
     );
 };

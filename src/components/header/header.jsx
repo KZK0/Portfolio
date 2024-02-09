@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import './header.scss';
 
 export const Header = () => {
@@ -35,7 +36,7 @@ export const Header = () => {
                     <NavLink className='nav-btn' to="/">Home</NavLink>
                     <NavLink className='nav-btn' to="/Project">Projects</NavLink>
                     <hr className="hr-nav-two" />
-                    <NavLink className='nav-contact-btn' to="/Contact">Contact Me<i className="fa-regular fa-envelope"></i></NavLink>
+                    <ScrollLink className='nav-contact-btn' activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0}>Contact Me<i className="fa-regular fa-envelope"></i></ScrollLink>
                 </div>
             </nav>
         </header>

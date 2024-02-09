@@ -7,7 +7,7 @@ TÂCHES PRINCIPALES:
 - Travailler sur la banner (détails)
 - Ajout loader
 - Finir la section skill
-- Faire le footer
+- Finir le footer
 
 
 TÂCHES SECONDAIRES:
@@ -25,5 +25,9 @@ DIVERS/IDEES:
 - Changement de langue
 - Ajout d'un bouton like dans le footer avec le nombre de like total
 - Ajout bouton pour revenir en haut après avoir scroll
-- Carrousel de plusieurs quote
 - Défilement des images sur les 3 projets au hover, sous forme de carrousel
+
+
+PROBLEMES:
+
+- Lors du clique sur le bouton contact me depuis la page projet, rien ne se passe.

@@ -257,6 +257,7 @@ header {
                 &:hover {
 
                     filter: drop-shadow(0px 2px 50px $shadow-light-grey);
+                    cursor: pointer;
                     animation: flickering 0.2s ease forwards;
 
                     @keyframes flickering {
