@@ -1,7 +1,31 @@
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 import './contact.scss';
 
-
 export const Contact = () => {
+    const form = useRef();
+    const [isEmailSent, setIsEmailSent] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        setIsEmailSent(true);
+
+        emailjs
+            .sendForm('service_60c5o9g', 'template_7drojkb', form.current, '9tI4xxL3Alq0eYRlm')
+            .then(
+                (result) => {
+                    console.log('SUCCESS!', result.text);
+                    setTimeout(() => setIsEmailSent(false), 2000);
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    setIsEmailSent(false);
+                }
+            );
+
+        form.current.reset();
+    };
 
     const redirectToLinkedin = () => {
         window.open('https://www.linkedin.com/in/mehdi-miraoui/', '_blank');
@@ -42,14 +66,16 @@ export const Contact = () => {
                             <h5>A project idea, my profile interests you or you just want to say hello? Type something ! <i className="fa-solid fa-face-laugh-wink"></i></h5>
                             <p>NB: Fields marked with a star are required *</p>
                         </div>
-                        <form className='content-right-scnd'>
-                            <label htmlFor="Name"></label>
-                            <input type="text" name='Name' placeholder='NAME *' maxLength='25' required />
-                            <label htmlFor="Mail"></label>
-                            <input type="email" name='Mail' placeholder='E-MAIL *' maxLength='25' required />
-                            <label htmlFor="Message"></label>
-                            <textarea name="Message" cols="30" rows="10" placeholder='ENTER YOUR MESSAGE *' maxLength='700' required></textarea>
-                            <button type='submit' id='submit-btn'><i className="fa-solid fa-paper-plane"></i>Send</button>
+                        <form ref={form} onSubmit={sendEmail} className='content-right-scnd'>
+                            <label htmlFor="user_name"></label>
+                            <input type="text" name='user_name' placeholder='NAME *' maxLength='25' required />
+                            <label htmlFor="user_email"></label>
+                            <input type="email" name='user_email' placeholder='E-MAIL *' maxLength='25' required />
+                            <label htmlFor="user_message"></label>
+                            <textarea name="user_message" cols="30" rows="10" placeholder='ENTER YOUR MESSAGE *' maxLength='700' required></textarea>
+                            <button type='submit' id='submit-btn'>
+                                {isEmailSent ? <p>Email Sent !</p> : <><i className="fa-solid fa-paper-plane"></i>Send</>}
+                            </button>
                         </form>
                     </div>
                 </div>
