@@ -34,7 +34,8 @@ export const Header = () => {
                 </div>
                 <div className="header-scnd-bloc">
                     <NavLink className='nav-btn' to="/">Home</NavLink>
-                    <NavLink className='nav-btn' to="/Project">Projects</NavLink>
+                    {/* <NavLink className='nav-btn' to="/Project">Projects</NavLink> */}
+                    <ScrollLink className='nav-btn' activeClass="active" to="project-section" spy={true} smooth={true} offset={-70} duration={0}>Projects</ScrollLink>
                     <hr className="hr-nav-two" />
                     <ScrollLink className='nav-contact-btn' activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0}>Contact Me<i className="fa-regular fa-envelope"></i></ScrollLink>
                 </div>

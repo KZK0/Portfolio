@@ -14,6 +14,8 @@
         ],
         "for": "OPENCLASSROOMS",
         "context": "Web Application",
+        "repository": "https://github.com/KZK0/Portfolio-architecte-sophie-bluel.git",
+        "demo": "",
         "tags": [
             "HTML5",
             "CSS3",
@@ -37,6 +39,8 @@
         ],
         "for": "OPENCLASSROOMS",
         "context": "Web Application",
+        "repository": "https://github.com/KZK0/Kasa.git",
+        "demo": "",
         "tags": [
             "HTML5",
             "SCSS",
@@ -60,6 +64,8 @@
         ],
         "for": "OPENCLASSROOMS",
         "context": "Web Application - Debugging",
+        "repository": "https://github.com/KZK0/724-Events.git",
+        "demo": "",
         "tags": [
             "HTML5",
             "SCSS",

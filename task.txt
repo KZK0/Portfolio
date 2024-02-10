@@ -4,8 +4,8 @@
 
 TÂCHES PRINCIPALES:
 
+- Responsive
 - Ajout loader
-- Finir la section skill
 
 
 TÂCHES SECONDAIRES:
@@ -19,7 +19,6 @@ TÂCHES SECONDAIRES:
 
 DIVERS/IDEES:
 
-- Responsive
 - SEO
 - Détails footer
 - Changement de langue

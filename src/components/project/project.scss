@@ -7,7 +7,7 @@
 // =============================================================================
 
 
-.project-section {
+#project-section {
 
     .project-bloc {
 
@@ -101,14 +101,14 @@
                     }
 
                     &:hover {
-                        color: $border-btn-after;
-                        border-color: $border-btn-after;
-                        background-color: $background-btn;
-                        cursor: pointer;
+                        // color: $border-btn-after;
+                        // border-color: $border-btn-after;
+                        // background-color: $background-btn;
+                        cursor: not-allowed;
 
-                        i {
-                            color: $border-btn-after;
-                        }
+                        // i {
+                        //     color: $border-btn-after;
+                        // }
                     }
                 }
             }
@@ -145,16 +145,16 @@
                         width: 45%;
                         text-decoration: none;
 
-                        &:hover {
+                        // &:hover {
 
-                            cursor: pointer;
+                        //     cursor: pointer;
 
-                            i,
-                            h3,
-                            p {
-                                filter: opacity(0.5);
-                            }
-                        }
+                        //     i,
+                        //     h3,
+                        //     p {
+                        //         filter: opacity(0.5);
+                        //     }
+                        // }
 
                         .bloc-one-content {
 
@@ -168,14 +168,49 @@
                                 color: $color-police-main;
                                 margin: 0;
                                 transition: 0.4s ease;
+                                width: 50%;
                             }
 
-                            i {
-                                font-size: 1.2em;
-                                color: $color-police-main;
-                                margin: 0;
-                                transition: 0.4s ease;
+
+                            .context-three {
+
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: right;
+                                gap: 5px;
+                                width: 50%;
+                                height: 30px;
+
+                                a {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 5px;
+                                    color: $color-police-main;
+                                    font-family: system-ui;
+                                    font-size: 0.7em;
+                                    text-decoration: none;
+                                    border: 1px solid $border-light-grey;
+                                    padding: 5px 6px;
+                                    transition: 0.4s ease;
+
+                                    i {
+                                        margin-bottom: -3px;
+                                    }
+
+                                    &:hover {
+                                        color: rgb(160, 160, 160);
+                                        background: $background-btn;
+                                    }
+                                }
                             }
+
+                            // i {
+                            //     font-size: 1.2em;
+                            //     color: $color-police-main;
+                            //     margin: 0;
+                            //     transition: 0.4s ease;
+                            // }
                         }
 
                         .context-content {

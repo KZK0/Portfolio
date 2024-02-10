@@ -18,6 +18,29 @@
         padding: 10px 0;
         margin: 0 auto;
         overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5%;
+            height: 100%;
+            background: linear-gradient(to left, rgba(14, 14, 14, 0.089), rgba(131, 131, 131, 0.123));
+            z-index: 120;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 5%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(14, 14, 14, 0.089), rgba(131, 131, 131, 0.123));
+            z-index: 120;
+        }
 
         .skill-card-bloc {
 
@@ -28,16 +51,16 @@
             gap: 10px;
             max-width: 70%;
             margin: 0 auto;
-            animation: Skillslide 10s linear infinite;
+            animation: Skillslide 20s linear infinite;
 
 
             @keyframes Skillslide {
                 from {
-                    transform: translateX(0);
+                    transform: translateX(110%);
                 }
 
                 to {
-                    transform: translateX(-60%);
+                    transform: translateX(-110%);
                 }
             }
 
