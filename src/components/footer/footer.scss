@@ -23,6 +23,11 @@
         padding: 10px 0;
         overflow: hidden;
 
+        @media (max-width: $sm) {
+
+            flex-direction: column;
+        }
+
         @media (max-width: $xs) {
 
             flex-direction: column;
@@ -36,6 +41,11 @@
             margin: 0;
             margin-bottom: -2px;
 
+            @media (max-width: $sm) {
+
+                margin-bottom: 5px;
+            }
+
             @media (max-width: $xs) {
 
                 margin-bottom: 5px;
@@ -47,6 +57,14 @@
         hr {
             height: 10px;
             margin: 0 3px;
+
+            @media (max-width: $sm) {
+
+                height: 0px;
+                width: 40px;
+                margin: 5px 0;
+                border-color: $border-btn-after;
+            }
 
             @media (max-width: $xs) {
 

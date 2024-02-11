@@ -31,3 +31,5 @@ PROBLEMES:
 
 - Lors du clique sur le bouton contact me depuis la page projet, rien ne se passe.
 - Solution safe pour liée mon email pro avec le form de contact
+- Problème de navbar au scroll, version mobile
+- Problème section skill qui dépasse

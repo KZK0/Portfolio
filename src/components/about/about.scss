@@ -10,6 +10,11 @@
 
     margin-bottom: 50px;
 
+    @media (max-width: $sm) {
+
+        margin-bottom: 10px;
+    }
+
     @media (max-width: $xs) {
 
         margin-bottom: 10px;
@@ -29,6 +34,11 @@
             margin-top: 80px;
             margin-bottom: 30px;
             position: relative;
+
+            @media (max-width: $sm) {
+
+                max-width: 85%;
+            }
 
             @media (max-width: $xs) {
 
@@ -52,6 +62,11 @@
                 text-transform: uppercase;
                 margin: 0;
 
+                @media (max-width: $sm) {
+
+                    font-size: 2.5em;
+                }
+
                 @media (max-width: $xs) {
 
                     font-size: 2em;
@@ -67,6 +82,13 @@
                 top: 40px;
                 left: 30px;
                 filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+
+                @media (max-width: $sm) {
+
+                    font-size: 1.5em;
+                    top: 18px;
+                    left: 20px;
+                }
 
                 @media (max-width: $xs) {
 
@@ -85,6 +107,12 @@
             max-width: 60%;
             margin: 0 auto;
 
+            @media (max-width: $sm) {
+
+                flex-direction: column-reverse;
+                max-width: 85%;
+            }
+
             @media (max-width: $xs) {
 
                 flex-direction: column-reverse;
@@ -99,6 +127,12 @@
                 width: 80%;
                 padding: 30px 30px;
 
+                @media (max-width: $sm) {
+
+                    width: 90%;
+                    padding: 30px 10px;
+                }
+
                 @media (max-width: $xs) {
 
                     width: 90%;
@@ -111,6 +145,11 @@
                     color: $color-police-main;
                     margin: 0;
                     position: relative;
+
+                    @media (max-width: $sm) {
+
+                        font-size: 1.5em;
+                    }
 
                     @media (max-width: $xs) {
 
@@ -130,6 +169,11 @@
                         bottom: -5px;
                         left: 0;
 
+                        @media (max-width: $sm) {
+
+                            width: 40px;
+                        }
+
                         @media (max-width: $xs) {
 
                             width: 40px;
@@ -143,6 +187,11 @@
                     color: $color-police-main;
                     margin: 0;
 
+                    @media (max-width: $sm) {
+
+                        font-size: 1em;
+                    }
+
                     @media (max-width: $xs) {
 
                         font-size: 1em;
@@ -152,6 +201,11 @@
                 .about-margin {
 
                     margin: 40px 0;
+
+                    @media (max-width: $sm) {
+
+                        margin: 20px 0;
+                    }
 
                     @media (max-width: $xs) {
 
@@ -178,6 +232,15 @@
                     transition: 0.4s ease;
                     text-decoration: none;
                     user-select: none;
+
+                    @media (max-width: $sm) {
+
+                        padding: 10px 0;
+                        width: 180px;
+                        font-size: 1.2em;
+                        gap: 15px;
+                        margin-top: 15px;
+                    }
 
                     @media (max-width: $xs) {
 
@@ -215,9 +278,23 @@
                 padding: 20px 30px;
                 border-left: 1px solid $border-light-grey;
 
+                @media (max-width: $sm) {
+
+                    width: 80%;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    border-left: none;
+                    padding: 25px 0;
+                    border-bottom: 1px solid $border-light-grey;
+                }
+
                 @media (max-width: $xs) {
 
-                    width: 100%;
+                    width: 80%;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
                     border-left: none;
                     padding: 25px 0;
                     border-bottom: 1px solid $border-light-grey;
@@ -228,6 +305,12 @@
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+
+                    @media (max-width: $sm) {
+
+                        flex-direction: row;
+                        justify-content: center;
+                    }
 
                     @media (max-width: $xs) {
 
@@ -249,6 +332,11 @@
                         margin: 0 auto;
                         position: relative;
 
+                        @media (max-width: $sm) {
+
+                            margin: 0;
+                        }
+
                         @media (max-width: $xs) {
 
                             margin: 0;
@@ -265,6 +353,26 @@
                             background-repeat: no-repeat;
                             opacity: 0;
                             transition: 0.4s ease;
+
+                            @media (max-width: $sm) {
+
+                                content: "#OPEN TO WORK ✔";
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 20px;
+                                bottom: -1px;
+                                left: 0;
+                                font-family: $font-main-text;
+                                font-weight: 500;
+                                font-size: 0.8em;
+                                color: $color-police-main;
+                                background-image: none;
+                                background: rgb(0, 54, 6);
+                                opacity: 1;
+                            }
 
                             @media (max-width: $xs) {
 
@@ -291,6 +399,11 @@
 
                             cursor: grab;
 
+                            @media (max-width: $sm) {
+
+                                cursor: default;
+                            }
+
                             @media (max-width: $xs) {
 
                                 cursor: default;
@@ -310,6 +423,13 @@
                         gap: 5px;
                         margin-bottom: 20px;
 
+                        @media (max-width: $sm) {
+
+                            justify-content: center;
+                            flex-direction: column;
+                            margin: auto 0;
+                        }
+
                         @media (max-width: $xs) {
 
                             justify-content: center;
@@ -326,6 +446,11 @@
                             height: 100%;
                             padding: 8px;
                             transition: 0.4s ease;
+
+                            @media (max-width: $sm) {
+
+                                height: 40px;
+                            }
 
                             @media (max-width: $xs) {
 
@@ -361,6 +486,11 @@
                     width: 100%;
                     user-select: none;
 
+                    @media (max-width: $sm) {
+
+                        padding: 0;
+                    }
+
                     @media (max-width: $xs) {
 
                         padding: 0;
@@ -376,9 +506,18 @@
                         color: $color-police-main;
                         margin: 5px 0;
 
+                        @media (max-width: $sm) {
+
+                            justify-content: center;
+                            width: 85%;
+                            margin: 3px 0;
+                        }
+
                         @media (max-width: $xs) {
 
-                            padding-left: 55px;
+                            justify-content: center;
+                            width: 85%;
+                            margin: 3px 0;
                         }
 
                         i {
@@ -408,6 +547,10 @@
                         padding: 3px 5px;
                         margin-top: 40px;
                         user-select: none;
+
+                        @media (max-width: $sm) {
+                            display: none;
+                        }
 
                         @media (max-width: $xs) {
                             display: none;

@@ -16,6 +16,11 @@
         margin-bottom: 100px;
         background-color: $color-primary;
 
+        @media (max-width: $sm) {
+
+            margin-bottom: 50px;
+        }
+
         @media (max-width: $xs) {
 
             margin-bottom: 50px;
@@ -28,6 +33,11 @@
             margin-top: 80px;
             margin-bottom: 50px;
             position: relative;
+
+            @media (max-width: $sm) {
+
+                max-width: 85%;
+            }
 
             @media (max-width: $xs) {
 
@@ -51,6 +61,11 @@
                 text-transform: uppercase;
                 margin: 0;
 
+                @media (max-width: $sm) {
+
+                    font-size: 2.5em;
+                }
+
                 @media (max-width: $xs) {
 
                     font-size: 2em;
@@ -66,6 +81,13 @@
                 top: 40px;
                 left: 30px;
                 filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+
+                @media (max-width: $sm) {
+
+                    font-size: 1.5em;
+                    top: 18px;
+                    left: 20px;
+                }
 
                 @media (max-width: $xs) {
 
@@ -85,6 +107,12 @@
             max-width: 60%;
             margin: 0 auto;
             gap: 35px;
+
+            @media (max-width: $sm) {
+
+                flex-direction: column;
+                max-width: 100%;
+            }
 
             @media (max-width: $xs) {
 
@@ -106,9 +134,14 @@
                 width: 40%;
                 gap: 40px;
 
+                @media (max-width: $sm) {
+
+                    width: 70%;
+                }
+
                 @media (max-width: $xs) {
 
-                    width: 85%;
+                    width: 70%;
                 }
 
                 .content-left-ltl-bloc {
@@ -125,6 +158,12 @@
                         margin-left: 35px;
                         margin-bottom: -8px;
                         user-select: none;
+
+                        @media (max-width: $sm) {
+
+                            font-size: 1.3em;
+                            margin-left: 30px;
+                        }
 
                         @media (max-width: $xs) {
 
@@ -144,6 +183,12 @@
                         margin: 0;
                         position: relative;
 
+                        @media (max-width: $sm) {
+
+                            font-size: 1.5em;
+                            gap: 10px;
+                        }
+
                         @media (max-width: $xs) {
 
                             font-size: 1.5em;
@@ -159,9 +204,14 @@
                             width: 85%;
                             background: $border-light-grey;
 
+                            @media (max-width: $sm) {
+
+                                width: 95%;
+                            }
+
                             @media (max-width: $xs) {
 
-                                width: 100%;
+                                width: 80%;
                             }
                         }
 
@@ -169,6 +219,12 @@
                             font-size: 0.8em;
                             margin: 0;
                             filter: drop-shadow(0px 2px 20px rgb(161, 161, 161));
+
+                            @media (max-width: $sm) {
+
+                                font-size: 0.65em;
+                                margin-bottom: -7px;
+                            }
 
                             @media (max-width: $xs) {
 
@@ -228,6 +284,15 @@
                 border-radius: 5px;
                 padding: 15px 0;
 
+                @media (max-width: $sm) {
+
+                    width: 100%;
+                    margin-top: 50px;
+                    background: linear-gradient(to top, $color-primary, rgba(29, 29, 29, 0.658));
+                    box-shadow: none;
+                    border-radius: 0px;
+                }
+
                 @media (max-width: $xs) {
 
                     width: 100%;
@@ -249,6 +314,12 @@
                     font-family: $font-main-text;
                     color: $color-police-main;
                     font-size: 1.2em;
+
+                    @media (max-width: $sm) {
+
+                        width: 80%;
+                        font-size: 1.2em;
+                    }
 
                     @media (max-width: $xs) {
 
@@ -282,6 +353,11 @@
                     width: 70%;
                     margin: 0 auto;
 
+                    @media (max-width: $sm) {
+
+                        width: 80%;
+                    }
+
                     @media (max-width: $xs) {
 
                         width: 85%;
@@ -291,6 +367,11 @@
                         font-family: $font-text;
                         color: $color-police-main;
                         font-size: 1.2em;
+
+                        @media (max-width: $sm) {
+
+                            font-size: 1em;
+                        }
 
                         @media (max-width: $xs) {
 
@@ -312,6 +393,11 @@
                         margin-bottom: 30px;
                         transition: 0.4s ease;
                         user-select: none;
+
+                        @media (max-width: $sm) {
+
+                            font-size: 1.1em;
+                        }
 
                         @media (max-width: $xs) {
 
@@ -338,6 +424,11 @@
                         resize: none;
                         user-select: none;
                         transition: 0.4s ease;
+
+                        @media (max-width: $sm) {
+
+                            font-size: 1.1em;
+                        }
 
                         @media (max-width: $xs) {
 
