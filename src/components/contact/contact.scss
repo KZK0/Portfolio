@@ -16,6 +16,11 @@
         margin-bottom: 100px;
         background-color: $color-primary;
 
+        @media (max-width: $xs) {
+
+            margin-bottom: 50px;
+        }
+
         .contact-title {
 
             max-width: 70%;
@@ -23,6 +28,11 @@
             margin-top: 80px;
             margin-bottom: 50px;
             position: relative;
+
+            @media (max-width: $xs) {
+
+                max-width: 90%;
+            }
 
             &::before {
                 content: "";
@@ -40,6 +50,11 @@
                 color: rgba(65, 65, 65, 0.247);
                 text-transform: uppercase;
                 margin: 0;
+
+                @media (max-width: $xs) {
+
+                    font-size: 2em;
+                }
             }
 
             p {
@@ -51,6 +66,13 @@
                 top: 40px;
                 left: 30px;
                 filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+
+                @media (max-width: $xs) {
+
+                    font-size: 1.2em;
+                    top: 15px;
+                    left: 20px;
+                }
             }
         }
 
@@ -63,6 +85,12 @@
             max-width: 60%;
             margin: 0 auto;
             gap: 35px;
+
+            @media (max-width: $xs) {
+
+                flex-direction: column;
+                max-width: 100%;
+            }
 
             .content-left {
 
@@ -78,6 +106,11 @@
                 width: 40%;
                 gap: 40px;
 
+                @media (max-width: $xs) {
+
+                    width: 85%;
+                }
+
                 .content-left-ltl-bloc {
 
                     display: flex;
@@ -92,6 +125,12 @@
                         margin-left: 35px;
                         margin-bottom: -8px;
                         user-select: none;
+
+                        @media (max-width: $xs) {
+
+                            font-size: 1.2em;
+                            margin-left: 30px;
+                        }
                     }
 
                     p {
@@ -105,6 +144,12 @@
                         margin: 0;
                         position: relative;
 
+                        @media (max-width: $xs) {
+
+                            font-size: 1.5em;
+                            gap: 10px;
+                        }
+
                         &::before {
                             content: "";
                             position: absolute;
@@ -113,12 +158,23 @@
                             height: 1px;
                             width: 85%;
                             background: $border-light-grey;
+
+                            @media (max-width: $xs) {
+
+                                width: 100%;
+                            }
                         }
 
                         i {
                             font-size: 0.8em;
                             margin: 0;
                             filter: drop-shadow(0px 2px 20px rgb(161, 161, 161));
+
+                            @media (max-width: $xs) {
+
+                                font-size: 0.65em;
+                                margin-bottom: -3px;
+                            }
                         }
                     }
                 }
@@ -172,6 +228,15 @@
                 border-radius: 5px;
                 padding: 15px 0;
 
+                @media (max-width: $xs) {
+
+                    width: 100%;
+                    margin-top: 50px;
+                    background: linear-gradient(to top, $color-primary, rgba(29, 29, 29, 0.658));
+                    box-shadow: none;
+                    border-radius: 0px;
+                }
+
                 .content-right-first {
 
                     display: flex;
@@ -184,6 +249,12 @@
                     font-family: $font-main-text;
                     color: $color-police-main;
                     font-size: 1.2em;
+
+                    @media (max-width: $xs) {
+
+                        width: 85%;
+                        font-size: 1.1em;
+                    }
 
                     h5 {
                         font-size: 1em;
@@ -211,10 +282,20 @@
                     width: 70%;
                     margin: 0 auto;
 
+                    @media (max-width: $xs) {
+
+                        width: 85%;
+                    }
+
                     label {
                         font-family: $font-text;
                         color: $color-police-main;
                         font-size: 1.2em;
+
+                        @media (max-width: $xs) {
+
+                            font-size: 1em;
+                        }
                     }
 
 
@@ -231,6 +312,11 @@
                         margin-bottom: 30px;
                         transition: 0.4s ease;
                         user-select: none;
+
+                        @media (max-width: $xs) {
+
+                            font-size: 1em;
+                        }
 
                         &:focus {
                             border-bottom: 1px solid $color-police-main;
@@ -252,6 +338,11 @@
                         resize: none;
                         user-select: none;
                         transition: 0.4s ease;
+
+                        @media (max-width: $xs) {
+
+                            font-size: 1em;
+                        }
 
                         &:focus {
                             border-bottom: 1px solid $color-police-main;

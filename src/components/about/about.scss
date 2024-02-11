@@ -10,6 +10,11 @@
 
     margin-bottom: 50px;
 
+    @media (max-width: $xs) {
+
+        margin-bottom: 10px;
+    }
+
     .about-bloc {
 
         width: 100%;
@@ -24,6 +29,11 @@
             margin-top: 80px;
             margin-bottom: 30px;
             position: relative;
+
+            @media (max-width: $xs) {
+
+                max-width: 90%;
+            }
 
             &::before {
                 content: "";
@@ -41,6 +51,11 @@
                 color: rgba(65, 65, 65, 0.247);
                 text-transform: uppercase;
                 margin: 0;
+
+                @media (max-width: $xs) {
+
+                    font-size: 2em;
+                }
             }
 
             p {
@@ -52,6 +67,13 @@
                 top: 40px;
                 left: 30px;
                 filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+
+                @media (max-width: $xs) {
+
+                    font-size: 1.2em;
+                    top: 15px;
+                    left: 20px;
+                }
             }
         }
 
@@ -63,6 +85,12 @@
             max-width: 60%;
             margin: 0 auto;
 
+            @media (max-width: $xs) {
+
+                flex-direction: column-reverse;
+                max-width: 90%;
+            }
+
             .about-card-first {
 
                 display: flex;
@@ -71,12 +99,23 @@
                 width: 80%;
                 padding: 30px 30px;
 
+                @media (max-width: $xs) {
+
+                    width: 90%;
+                    padding: 30px 10px;
+                }
+
                 h4 {
                     font-family: $font-main-text;
                     font-size: 2em;
                     color: $color-police-main;
                     margin: 0;
                     position: relative;
+
+                    @media (max-width: $xs) {
+
+                        font-size: 1.5em;
+                    }
 
                     span {
                         font-family: $font-text;
@@ -90,6 +129,11 @@
                         background-color: $border-light-grey;
                         bottom: -5px;
                         left: 0;
+
+                        @media (max-width: $xs) {
+
+                            width: 40px;
+                        }
                     }
                 }
 
@@ -98,11 +142,21 @@
                     font-size: 1.3em;
                     color: $color-police-main;
                     margin: 0;
+
+                    @media (max-width: $xs) {
+
+                        font-size: 1em;
+                    }
                 }
 
                 .about-margin {
 
                     margin: 40px 0;
+
+                    @media (max-width: $xs) {
+
+                        margin: 20px 0;
+                    }
                 }
 
                 .btn-cv {
@@ -124,6 +178,15 @@
                     transition: 0.4s ease;
                     text-decoration: none;
                     user-select: none;
+
+                    @media (max-width: $xs) {
+
+                        padding: 10px 0;
+                        width: 180px;
+                        font-size: 1.2em;
+                        gap: 15px;
+                        margin-top: 15px;
+                    }
 
                     i {
                         color: $border-light-grey;
@@ -152,75 +215,141 @@
                 padding: 20px 30px;
                 border-left: 1px solid $border-light-grey;
 
-                .card-img {
+                @media (max-width: $xs) {
 
-                    background-image: url(/src/assets/images/profile/me.webp);
-                    background-size: 300px;
-                    background-repeat: no-repeat;
-                    background-position: right 50% bottom 75%;
-                    background-color: $profil-card-background;
-                    border: 1px solid $border-light-grey;
-                    border-radius: 1%;
-                    width: 170px;
-                    height: 170px;
-                    margin: 0 auto;
-                    position: relative;
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        background-image: url('/src/assets/images/profile/picme.webp');
-                        background-size: 80%;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        opacity: 0;
-                        transition: 0.4s ease;
-                    }
-
-                    &:hover {
-
-                        &::after {
-                            opacity: 1;
-                        }
-                    }
+                    width: 100%;
+                    border-left: none;
+                    padding: 25px 0;
+                    border-bottom: 1px solid $border-light-grey;
                 }
 
-                .card-link {
+                .mobile-card {
 
                     display: flex;
-                    flex-direction: row;
-                    gap: 5px;
-                    margin: 0 auto;
-                    margin-bottom: 20px;
+                    flex-direction: column;
+                    gap: 10px;
 
-                    button {
+                    @media (max-width: $xs) {
 
-                        background-color: transparent;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+
+                    .card-img {
+
+                        background-image: url(/src/assets/images/profile/me.webp);
+                        background-size: 300px;
+                        background-repeat: no-repeat;
+                        background-position: right 50% bottom 75%;
+                        background-color: $profil-card-background;
                         border: 1px solid $border-light-grey;
-                        border-radius: 2px;
-                        width: 40px;
-                        height: 100%;
-                        padding: 8px;
-                        transition: 0.4s ease;
+                        border-radius: 1%;
+                        width: 170px;
+                        height: 170px;
+                        margin: 0 auto;
+                        position: relative;
 
-                        i {
-                            font-size: 1.6em;
-                            color: $border-light-grey;
+                        @media (max-width: $xs) {
+
+                            margin: 0;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-image: url('/src/assets/images/profile/picme.webp');
+                            background-size: 80%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            opacity: 0;
                             transition: 0.4s ease;
+
+                            @media (max-width: $xs) {
+
+                                content: "#OPEN TO WORK ✔";
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 20px;
+                                bottom: -1px;
+                                left: 0;
+                                font-family: $font-main-text;
+                                font-weight: 500;
+                                font-size: 0.8em;
+                                color: $color-police-main;
+                                background-image: none;
+                                background: rgb(0, 54, 6);
+                                opacity: 1;
+                            }
                         }
 
                         &:hover {
-                            background-color: $background-btn;
-                            border-color: $border-btn-after;
-                            cursor: pointer;
 
-                            i {
-                                color: $border-btn-after;
+                            cursor: grab;
+
+                            @media (max-width: $xs) {
+
+                                cursor: default;
+                            }
+
+                            &::after {
+                                opacity: 1;
                             }
                         }
                     }
+
+                    .card-link {
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 5px;
+                        margin-bottom: 20px;
+
+                        @media (max-width: $xs) {
+
+                            justify-content: center;
+                            flex-direction: column;
+                            margin: auto 0;
+                        }
+
+                        button {
+
+                            background-color: transparent;
+                            border: 1px solid $border-light-grey;
+                            border-radius: 2px;
+                            width: 40px;
+                            height: 100%;
+                            padding: 8px;
+                            transition: 0.4s ease;
+
+                            @media (max-width: $xs) {
+
+                                height: 40px;
+                            }
+
+                            i {
+                                font-size: 1.6em;
+                                color: $border-light-grey;
+                                transition: 0.4s ease;
+                            }
+
+                            &:hover {
+                                background-color: $background-btn;
+                                border-color: $border-btn-after;
+                                cursor: pointer;
+
+                                i {
+                                    color: $border-btn-after;
+                                }
+                            }
+                        }
+                    }
+
                 }
 
                 .card-info {
@@ -232,6 +361,11 @@
                     width: 100%;
                     user-select: none;
 
+                    @media (max-width: $xs) {
+
+                        padding: 0;
+                    }
+
                     p {
 
                         display: flex;
@@ -241,6 +375,11 @@
                         font-family: $font-main-text;
                         color: $color-police-main;
                         margin: 5px 0;
+
+                        @media (max-width: $xs) {
+
+                            padding-left: 55px;
+                        }
 
                         i {
                             color: $color-police-main;
@@ -270,15 +409,19 @@
                         margin-top: 40px;
                         user-select: none;
 
+                        @media (max-width: $xs) {
+                            display: none;
+                        }
+
                         p {
                             font-family: $font-main-text;
                             font-size: 1em;
 
+                            i {
+                                color: $color-police-main;
+                            }
                         }
 
-                        i {
-                            color: $color-police-main;
-                        }
                     }
                 }
             }

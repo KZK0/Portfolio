@@ -28,6 +28,13 @@
             margin: 0;
             margin-left: 20%;
 
+            @media (max-width: $xs) {
+
+                font-size: 2em;
+                width: 90%;
+                margin: 0 auto;
+            }
+
             .banner-text-style {
                 color: rgb(27, 27, 27);
                 transition: 0.4s ease;
@@ -42,6 +49,14 @@
             color: $color-police-main;
             margin: 0;
             margin-left: 25%;
+
+            @media (max-width: $xs) {
+
+                font-size: 1.4em;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
 
             .word-animation {
                 position: relative;
@@ -58,6 +73,11 @@
                     left: 0;
                     background-color: $color-white;
                     filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+
+                    @media (max-width: $xs) {
+
+                        filter: drop-shadow(0px 3px 5px rgb(255, 255, 255));
+                    }
                 }
 
                 &:hover {
@@ -65,17 +85,6 @@
                     color: $color-police-main;
                 }
             }
-        }
-
-        .banner-line {
-
-            width: 230px;
-            height: 2px;
-            border-color: $border-light-grey;
-            background-color: $color-white;
-            filter: drop-shadow(0px 2px 5px $color-white);
-            margin: 2px;
-            margin-left: 40%;
         }
 
         .banner-paragraph {
@@ -86,6 +95,13 @@
             color: $color-police-main;
             margin: 20px;
             margin-left: 25%;
+
+            @media (max-width: $xs) {
+
+                font-size: 0.7em;
+                width: 85%;
+                margin: 0 auto;
+            }
         }
 
         i {

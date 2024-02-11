@@ -18,6 +18,11 @@
     padding: 15px 0;
     overflow: hidden;
 
+    @media (max-width: $xs) {
+
+        padding: 5px 0;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -26,6 +31,8 @@
         top: 0;
         left: 0;
         background: linear-gradient(to bottom, $color-primary, rgba(128, 128, 128, 0.048));
+
+        @media (max-width: $xs) {}
     }
 
     .quote-content {
@@ -38,11 +45,21 @@
         max-width: 30%;
         margin: 0 auto;
 
+        @media (max-width: $xs) {
+
+            max-width: 80%;
+        }
+
         h5 {
             color: $color-police-main;
             font-family: system-ui;
             font-size: 0.8em;
             margin: 0;
+
+            @media (max-width: $xs) {
+
+                font-size: 0.7em;
+            }
         }
 
         p {
@@ -53,10 +70,20 @@
             text-align: center;
             margin: 0;
 
+            @media (max-width: $xs) {
+
+                font-size: 1em;
+            }
+
             i {
                 margin: 0;
                 font-size: 0.8em;
                 color: $color-police-main;
+
+                @media (max-width: $xs) {
+
+                    font-size: 0.6em;
+                }
             }
         }
 
@@ -66,6 +93,11 @@
             font-size: 0.8em;
             text-align: end;
             margin: 0;
+
+            @media (max-width: $xs) {
+
+                font-size: 0.7em;
+            }
         }
     }
 }

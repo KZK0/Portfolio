@@ -20,6 +20,13 @@
         overflow: hidden;
         position: relative;
 
+        @media (max-width: $xs) {
+
+            max-width: 130%;
+            width: 400px;
+            transform: translateX(-10px) rotate(3deg);
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -29,6 +36,11 @@
             height: 100%;
             background: linear-gradient(to left, rgba(14, 14, 14, 0.089), rgba(131, 131, 131, 0.123));
             z-index: 120;
+
+            @media (max-width: $xs) {
+
+                overflow: hidden;
+            }
         }
 
         &::after {
@@ -40,6 +52,11 @@
             height: 100%;
             background: linear-gradient(to right, rgba(14, 14, 14, 0.089), rgba(131, 131, 131, 0.123));
             z-index: 120;
+
+            @media (max-width: $xs) {
+
+                overflow: hidden;
+            }
         }
 
         .skill-card-bloc {
@@ -52,6 +69,11 @@
             max-width: 70%;
             margin: 0 auto;
             animation: Skillslide 20s linear infinite;
+
+            @media (max-width: $xs) {
+
+                max-width: 100%;
+            }
 
 
             @keyframes Skillslide {
@@ -79,6 +101,14 @@
                 transition: 0.4s ease;
                 user-select: none;
 
+                @media (max-width: $xs) {
+
+                    padding: 20px;
+                    width: 30px;
+                    height: 30px;
+                    gap: 8px;
+                }
+
                 &:hover {
                     border: 1px solid $border-btn-after;
 
@@ -96,6 +126,11 @@
                     font-size: 2em;
                     margin: 0;
                     transition: 0.4s ease;
+
+                    @media (max-width: $xs) {
+
+                        font-size: 1.2em;
+                    }
                 }
 
                 h6 {
@@ -104,6 +139,11 @@
                     font-size: 1em;
                     margin: 0;
                     transition: 0.4s ease;
+
+                    @media (max-width: $xs) {
+
+                        font-size: 0.7em;
+                    }
                 }
             }
         }

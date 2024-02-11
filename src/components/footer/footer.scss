@@ -23,6 +23,11 @@
         padding: 10px 0;
         overflow: hidden;
 
+        @media (max-width: $xs) {
+
+            flex-direction: column;
+        }
+
 
         .first-paragraph {
             color: $color-police-main;
@@ -31,12 +36,25 @@
             margin: 0;
             margin-bottom: -2px;
 
+            @media (max-width: $xs) {
+
+                margin-bottom: 5px;
+            }
+
             // i {}
         }
 
         hr {
             height: 10px;
             margin: 0 3px;
+
+            @media (max-width: $xs) {
+
+                height: 0px;
+                width: 30px;
+                margin: 5px 0;
+                border-color: $border-btn-after;
+            }
         }
 
         .scnd-paragraph {

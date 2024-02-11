@@ -14,12 +14,10 @@ export const Contact = () => {
         emailjs
             .sendForm('service_60c5o9g', 'template_7drojkb', form.current, '9tI4xxL3Alq0eYRlm')
             .then(
-                (result) => {
-                    console.log('SUCCESS!', result.text);
+                () => {
                     setTimeout(() => setIsEmailSent(false), 2000);
                 },
-                (error) => {
-                    console.log('FAILED...', error.text);
+                () => {
                     setIsEmailSent(false);
                 }
             );

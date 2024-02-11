@@ -39,6 +39,9 @@ export const Header = () => {
                     <hr className="hr-nav-two" />
                     <ScrollLink className='nav-contact-btn' activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0}>Contact Me<i className="fa-regular fa-envelope"></i></ScrollLink>
                 </div>
+                <div className="mobile-menu">
+                    <button><i className="fa-solid fa-bars"></i></button>
+                </div>
             </nav>
         </header>
     )

@@ -26,13 +26,15 @@ export const About = () => {
                         <a className='btn-cv' href="/src/assets/pdf/NCV.pdf" download='CV - Mehdi Miraoui'>Download CV <i className="fa-regular fa-file-pdf"></i></a>
                     </div>
                     <div className='about-card-scnd'>
-                        <div className='card-img'></div>
-                        <div className='card-link'>
-                            <button onClick={redirectToGithub} aria-label='link to github'><i className="fa-brands fa-github"></i></button>
-                            <button onClick={redirectToLinkedin} aria-label='link to linkedin'><i className="fa-brands fa-linkedin"></i></button>
-                            <ScrollLink activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0}>
-                                <button aria-label='link to mail'><i className="fa-solid fa-envelope"></i></button>
-                            </ScrollLink>
+                        <div className='mobile-card'>
+                            <div className='card-img'></div>
+                            <div className='card-link'>
+                                <button onClick={redirectToGithub} aria-label='link to github'><i className="fa-brands fa-github"></i></button>
+                                <button onClick={redirectToLinkedin} aria-label='link to linkedin'><i className="fa-brands fa-linkedin"></i></button>
+                                <ScrollLink activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0}>
+                                    <button aria-label='link to mail'><i className="fa-solid fa-envelope"></i></button>
+                                </ScrollLink>
+                            </div>
                         </div>
                         <div className='card-info'>
                             <p><i className="fa-solid fa-location-dot"></i><span>From:</span> France, Nord (59)</p>
@@ -42,8 +44,7 @@ export const About = () => {
                                 <img src="/src/assets/images/logos/icons8-allemagne-48.png" alt="Drapeau de l'allemagne'" />
                             </p>
                             <div className='available-card'>
-                                <p>#OPEN TO WORK</p>
-                                <i className="fa-solid fa-check"></i>
+                                <p>#OPEN TO WORK<i className="fa-solid fa-check"></i></p>
                             </div>
                         </div>
                     </div>

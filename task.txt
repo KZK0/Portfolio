@@ -4,7 +4,7 @@
 
 TÂCHES PRINCIPALES:
 
-- Responsive
+- Responsive a terminer
 - Ajout loader
 
 

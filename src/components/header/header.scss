@@ -58,6 +58,13 @@ header {
         padding: 10px;
         margin: 0 auto;
 
+        @media (max-width: $xs) {
+
+            display: flex;
+            justify-content: end;
+            padding: 5px;
+        }
+
         .header-first-bloc {
 
             position: relative;
@@ -88,6 +95,10 @@ header {
                     letter-spacing: 1px;
                     margin: 0;
 
+                    @media (max-width: $xs) {
+                        font-size: 1.3em;
+                    }
+
                     .nav-logo-span {
 
                         animation: flicker 0.7s linear infinite;
@@ -116,13 +127,17 @@ header {
                     border-color: rgb(167, 167, 167);
                     animation: movebar 5s linear infinite;
 
+                    @media (max-width: $xs) {
+                        width: 20px;
+                    }
+
                     @keyframes movebar {
                         0% {
                             transform: translateX(0px);
                         }
 
                         50% {
-                            transform: translateX(50px);
+                            transform: translateX(30px);
                         }
 
                         100% {
@@ -138,6 +153,10 @@ header {
                     font-family: $font-caligraphy;
                     text-align: right;
                     margin: 0;
+
+                    @media (max-width: $xs) {
+                        font-size: 1em;
+                    }
                 }
             }
 
@@ -146,6 +165,10 @@ header {
                 height: 70px;
                 width: 0px;
                 border-color: $border-light-grey;
+
+                @media (max-width: $xs) {
+                    display: none;
+                }
             }
         }
 
@@ -155,6 +178,11 @@ header {
             align-items: center;
             gap: 50px;
             text-transform: uppercase;
+
+            @media (max-width: $xs) {
+
+                display: none;
+            }
 
             .nav-btn {
 
@@ -279,6 +307,20 @@ header {
 
                         transform: skewX(45deg) translateX(200%);
                     }
+                }
+            }
+        }
+
+        .mobile-menu {
+
+            button {
+
+                border: none;
+                background: transparent;
+
+                i {
+                    font-size: 2em;
+                    color: $color-police-main;
                 }
             }
         }
