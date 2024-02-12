@@ -70,8 +70,8 @@ $xs: 380px;
 // Mobile version
 $sm: 490px;
 
-// Large Mobile version
-// $md: 700px;
+// Large Mobile/ Small tablet version
+$md: 700px;
 
 // Tablet Version
 // $lg: 920px;
@@ -90,6 +90,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: $color-primary;
+    overflow-x: hidden;
 }
 
 p,

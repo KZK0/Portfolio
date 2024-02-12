@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "Sophie Bluel - Portfolio",
-        "cover": "/src/assets/images/covers/new-sb-prjct.webp",
+        "cover": "/images/covers/new-sb-prjct.webp",
         "alt": "Picture of Sophie Bluel - Portfolio project",
         "description": "At ArchiWebos, I'm reinforcing a team to design the portfolio website for an interior architect. My tasks include developing the presentation page for the architect's work, creating the administrator login page, and designing a modal for uploading media.",
         "pictures": [
@@ -27,7 +27,7 @@
     {
         "id": "2",
         "title": "Kasa",
-        "cover": "/src/assets/images/covers/new-kasa-prjct.webp",
+        "cover": "/images/covers/new-kasa-prjct.webp",
         "alt": "Picture of Kasa project",
         "description": "Tasked with building their apartment rental platform using React. I'm creating components and routes following Figma mockups, while integrating features like photo gallery scrolling and Collapse management.",
         "pictures": [
@@ -52,7 +52,7 @@
     {
         "id": "3",
         "title": "724 events",
-        "cover": "/src/assets/images/covers/new-724-prjct.webp",
+        "cover": "/images/covers/new-724-prjct.webp",
         "alt": "Picture of 724 events project",
         "description": "Following the departure of a previous developer, I'm tasked with resolving remaining bugs, particularly those related to the carousel, event category selection, and displaying the latest event in the footer.",
         "pictures": [

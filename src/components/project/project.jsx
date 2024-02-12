@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import './project.scss';
 
 export const Project = ({ data }) => {
@@ -12,7 +12,7 @@ export const Project = ({ data }) => {
                 <div className='project-content'>
                     <div className="content-firstbloc">
                         {/* <NavLink className='nav-btn-project' to='/Project'>View all projects <i className="fa-solid fa-bars-staggered"></i></NavLink> */}
-                        <button className='nav-btn-project'>View all projects <i className="fa-solid fa-bars-staggered"></i></button>
+                        <button aria-label='button view all projects' className='nav-btn-project'>View all projects <i className="fa-solid fa-bars-staggered"></i></button>
                     </div>
                     <div className="project-column">
                         {data.map((item) => (

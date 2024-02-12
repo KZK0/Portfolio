@@ -58,6 +58,13 @@ header {
         padding: 10px;
         margin: 0 auto;
 
+        @media (max-width: $md) {
+
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
         @media (max-width: $sm) {
 
             display: flex;
@@ -102,6 +109,10 @@ header {
                     letter-spacing: 1px;
                     margin: 0;
 
+                    @media (max-width: $md) {
+                        font-size: 1.7em;
+                    }
+
                     @media (max-width: $sm) {
                         font-size: 1.5em;
                     }
@@ -138,6 +149,10 @@ header {
                     border-color: rgb(167, 167, 167);
                     animation: movebar 5s linear infinite;
 
+                    @media (max-width: $md) {
+                        width: 30px;
+                    }
+
                     @media (max-width: $sm) {
                         width: 20px;
                     }
@@ -169,6 +184,10 @@ header {
                     text-align: right;
                     margin: 0;
 
+                    @media (max-width: $md) {
+                        font-size: 1.4em;
+                    }
+
                     @media (max-width: $sm) {
                         font-size: 1.2em;
                     }
@@ -184,6 +203,10 @@ header {
                 height: 70px;
                 width: 0px;
                 border-color: $border-light-grey;
+
+                @media (max-width: $md) {
+                    display: none;
+                }
 
                 @media (max-width: $sm) {
                     display: none;
@@ -201,6 +224,11 @@ header {
             align-items: center;
             gap: 50px;
             text-transform: uppercase;
+
+            @media (max-width: $md) {
+
+                display: none;
+            }
 
             @media (max-width: $sm) {
 

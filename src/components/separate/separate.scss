@@ -18,6 +18,11 @@
     padding: 15px 0;
     overflow: hidden;
 
+    @media (max-width: $md) {
+
+        height: 15px;
+    }
+
     @media (max-width: $sm) {
 
         height: 8px;

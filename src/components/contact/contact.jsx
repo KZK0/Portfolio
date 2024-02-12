@@ -71,7 +71,7 @@ export const Contact = () => {
                             <input type="email" name='user_email' placeholder='E-MAIL *' maxLength='25' required />
                             <label htmlFor="user_message"></label>
                             <textarea name="user_message" cols="30" rows="10" placeholder='ENTER YOUR MESSAGE *' maxLength='700' required></textarea>
-                            <button type='submit' id='submit-btn'>
+                            <button aria-label='Submit contact form' type='submit' id='submit-btn'>
                                 {isEmailSent ? <p>Email Sent !</p> : <><i className="fa-solid fa-paper-plane"></i>Send</>}
                             </button>
                         </form>

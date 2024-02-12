@@ -25,6 +25,7 @@ DIVERS/IDEES:
 - Ajout d'un bouton like dans le footer avec le nombre de like total
 - Ajout bouton pour revenir en haut après avoir scroll
 - Défilement des images sur les 3 projets au hover, sous forme de carrousel
+- Créer une petite modal pour le message envoyé avec succès du form contact
 
 
 PROBLEMES:
