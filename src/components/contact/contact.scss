@@ -16,6 +16,11 @@
         margin-bottom: 100px;
         background-color: $color-primary;
 
+        @media (max-width: $lg) {
+
+            margin-bottom: 70px;
+        }
+
         @media (max-width: $md) {
 
             margin-bottom: 50px;
@@ -38,6 +43,11 @@
             margin-top: 80px;
             margin-bottom: 50px;
             position: relative;
+
+            @media (max-width: $lg) {
+
+                max-width: 90%;
+            }
 
             @media (max-width: $md) {
 
@@ -71,6 +81,11 @@
                 text-transform: uppercase;
                 margin: 0;
 
+                @media (max-width: $lg) {
+
+                    font-size: 2.7em;
+                }
+
                 @media (max-width: $md) {
 
                     font-size: 2.7em;
@@ -96,6 +111,13 @@
                 top: 40px;
                 left: 30px;
                 filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+
+                @media (max-width: $lg) {
+
+                    font-size: 1.7em;
+                    top: 18px;
+                    left: 25px;
+                }
 
                 @media (max-width: $md) {
 
@@ -130,6 +152,12 @@
             margin: 0 auto;
             gap: 35px;
 
+            @media (max-width: $lg) {
+
+                flex-direction: row;
+                max-width: 90%;
+            }
+
             @media (max-width: $md) {
 
                 flex-direction: column;
@@ -162,6 +190,11 @@
                 width: 40%;
                 gap: 40px;
 
+                @media (max-width: $lg) {
+
+                    width: 50%;
+                }
+
                 @media (max-width: $md) {
 
                     width: 70%;
@@ -191,6 +224,12 @@
                         margin-left: 35px;
                         margin-bottom: -8px;
                         user-select: none;
+
+                        @media (max-width: $lg) {
+
+                            font-size: 1.3em;
+                            margin-left: 30px;
+                        }
 
                         @media (max-width: $md) {
 
@@ -222,6 +261,12 @@
                         margin: 0;
                         position: relative;
 
+                        @media (max-width: $lg) {
+
+                            font-size: 1.7em;
+                            gap: 10px;
+                        }
+
                         @media (max-width: $md) {
 
                             font-size: 1.7em;
@@ -249,6 +294,11 @@
                             width: 85%;
                             background: $border-light-grey;
 
+                            @media (max-width: $lg) {
+
+                                width: 95%;
+                            }
+
                             @media (max-width: $md) {
 
                                 width: 95%;
@@ -269,6 +319,12 @@
                             font-size: 0.8em;
                             margin: 0;
                             filter: drop-shadow(0px 2px 20px rgb(161, 161, 161));
+
+                            @media (max-width: $lg) {
+
+                                font-size: 0.65em;
+                                margin-bottom: -7px;
+                            }
 
                             @media (max-width: $md) {
 
@@ -340,6 +396,14 @@
                 border-radius: 5px;
                 padding: 15px 0;
 
+                @media (max-width: $lg) {
+
+                    width: 70%;
+                    margin-top: 50px;
+                    background: linear-gradient(to top, $color-primary, rgba(29, 29, 29, 0.658));
+                    padding: 40px 0;
+                }
+
                 @media (max-width: $md) {
 
                     width: 100%;
@@ -383,6 +447,12 @@
                     color: $color-police-main;
                     font-size: 1.2em;
 
+                    @media (max-width: $lg) {
+
+                        width: 80%;
+                        font-size: 1.2em;
+                    }
+
                     @media (max-width: $sm) {
 
                         width: 80%;
@@ -421,6 +491,11 @@
                     width: 70%;
                     margin: 0 auto;
 
+                    @media (max-width: $lg) {
+
+                        width: 80%;
+                    }
+
                     @media (max-width: $sm) {
 
                         width: 80%;
@@ -455,6 +530,7 @@
                         width: 70%;
                         height: 40px;
                         border: none;
+                        border-radius: 0px;
                         border-bottom: 1px solid $border-light-grey;
                         background: transparent;
                         outline: none;
@@ -519,11 +595,11 @@
                         background-color: transparent;
                         border: 1px solid $border-light-grey;
                         border-radius: 2px;
-                        width: 130px;
+                        width: 120px;
                         height: 100%;
                         padding: 8px;
                         color: $border-light-grey;
-                        font-size: 1.2em;
+                        font-size: 1.1em;
                         user-select: none;
                         transition: 0.4s ease;
 

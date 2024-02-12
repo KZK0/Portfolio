@@ -20,6 +20,12 @@
         overflow: hidden;
         position: relative;
 
+        @media (max-width: $lg) {
+
+            max-width: 100%;
+            width: 100%;
+        }
+
         @media (max-width: $md) {
 
             max-width: 100%;
@@ -48,6 +54,11 @@
             background: linear-gradient(to left, rgba(14, 14, 14, 0.089), rgba(131, 131, 131, 0.123));
             z-index: 120;
 
+            @media (max-width: $lg) {
+
+                overflow: hidden;
+            }
+
             @media (max-width: $md) {
 
                 overflow: hidden;
@@ -73,6 +84,11 @@
             height: 100%;
             background: linear-gradient(to right, rgba(14, 14, 14, 0.089), rgba(131, 131, 131, 0.123));
             z-index: 120;
+
+            @media (max-width: $lg) {
+
+                overflow: hidden;
+            }
 
             @media (max-width: $md) {
 
@@ -100,6 +116,11 @@
             max-width: 70%;
             margin: 0 auto;
             animation: Skillslide 20s linear infinite;
+
+            @media (max-width: $lg) {
+
+                max-width: 100%;
+            }
 
             @media (max-width: $md) {
 
@@ -141,6 +162,14 @@
                 border-radius: 2px;
                 transition: 0.4s ease;
                 user-select: none;
+
+                @media (max-width: $lg) {
+
+                    padding: 25px;
+                    width: 30px;
+                    height: 30px;
+                    gap: 8px;
+                }
 
                 @media (max-width: $md) {
 
@@ -184,6 +213,11 @@
                     margin: 0;
                     transition: 0.4s ease;
 
+                    @media (max-width: $lg) {
+
+                        font-size: 1.5em;
+                    }
+
                     @media (max-width: $md) {
 
                         font-size: 1.5em;
@@ -206,6 +240,11 @@
                     font-size: 1em;
                     margin: 0;
                     transition: 0.4s ease;
+
+                    @media (max-width: $lg) {
+
+                        font-size: 0.8em;
+                    }
 
                     @media (max-width: $md) {
 

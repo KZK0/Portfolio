@@ -58,6 +58,13 @@ header {
         padding: 10px;
         margin: 0 auto;
 
+        @media (max-width: $lg) {
+
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
         @media (max-width: $md) {
 
             display: flex;
@@ -109,6 +116,10 @@ header {
                     letter-spacing: 1px;
                     margin: 0;
 
+                    @media (max-width: $lg) {
+                        font-size: 1.7em;
+                    }
+
                     @media (max-width: $md) {
                         font-size: 1.7em;
                     }
@@ -149,6 +160,10 @@ header {
                     border-color: rgb(167, 167, 167);
                     animation: movebar 5s linear infinite;
 
+                    @media (max-width: $lg) {
+                        width: 30px;
+                    }
+
                     @media (max-width: $md) {
                         width: 30px;
                     }
@@ -184,6 +199,10 @@ header {
                     text-align: right;
                     margin: 0;
 
+                    @media (max-width: $lg) {
+                        font-size: 1.4em;
+                    }
+
                     @media (max-width: $md) {
                         font-size: 1.4em;
                     }
@@ -203,6 +222,10 @@ header {
                 height: 70px;
                 width: 0px;
                 border-color: $border-light-grey;
+
+                @media (max-width: $lg) {
+                    display: none;
+                }
 
                 @media (max-width: $md) {
                     display: none;
@@ -224,6 +247,11 @@ header {
             align-items: center;
             gap: 50px;
             text-transform: uppercase;
+
+            @media (max-width: $lg) {
+
+                display: none;
+            }
 
             @media (max-width: $md) {
 

@@ -18,6 +18,11 @@
     padding: 15px 0;
     overflow: hidden;
 
+    @media (max-width: $lg) {
+
+        padding: 10px 0;
+    }
+
     @media (max-width: $md) {
 
         padding: 10px 0;
@@ -53,6 +58,11 @@
         max-width: 30%;
         margin: 0 auto;
 
+        @media (max-width: $lg) {
+
+            max-width: 70%;
+        }
+
         @media (max-width: $md) {
 
             max-width: 85%;
@@ -73,6 +83,11 @@
             font-family: system-ui;
             font-size: 0.8em;
             margin: 0;
+
+            @media (max-width: $lg) {
+
+                font-size: 0.8em;
+            }
 
             @media (max-width: $md) {
 
@@ -98,6 +113,11 @@
             text-align: center;
             margin: 0;
 
+            @media (max-width: $lg) {
+
+                font-size: 1.2em;
+            }
+
             @media (max-width: $md) {
 
                 font-size: 1.2em;
@@ -117,6 +137,11 @@
                 margin: 0;
                 font-size: 0.8em;
                 color: $color-police-main;
+
+                @media (max-width: $lg) {
+
+                    font-size: 0.7em;
+                }
 
                 @media (max-width: $md) {
 
@@ -141,6 +166,11 @@
             font-size: 0.8em;
             text-align: end;
             margin: 0;
+
+            @media (max-width: $lg) {
+
+                font-size: 0.8em;
+            }
 
             @media (max-width: $md) {
 
