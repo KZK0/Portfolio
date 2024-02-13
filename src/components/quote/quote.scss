@@ -18,6 +18,11 @@
     padding: 15px 0;
     overflow: hidden;
 
+    @media (max-width: $xl) {
+
+        padding: 10px 0;
+    }
+
     @media (max-width: $lg) {
 
         padding: 10px 0;
@@ -55,8 +60,13 @@
         flex-direction: column;
         gap: 10px;
         height: 100%;
-        max-width: 30%;
+        max-width: 40%;
         margin: 0 auto;
+
+        @media (max-width: $xl) {
+
+            max-width: 60%;
+        }
 
         @media (max-width: $lg) {
 

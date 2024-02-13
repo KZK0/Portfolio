@@ -28,6 +28,20 @@
             margin: 0;
             margin-left: 20%;
 
+            @media (max-width: $xxl) {
+
+                font-size: 4.7em;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            @media (max-width: $xl) {
+
+                font-size: 4.5em;
+                width: 80%;
+                margin: 0 auto;
+            }
+
             @media (max-width: $lg) {
 
                 font-size: 4em;
@@ -70,6 +84,22 @@
             color: $color-police-main;
             margin: 0;
             margin-left: 25%;
+
+            @media (max-width: $xxl) {
+
+                font-size: 3.7em;
+                width: 70%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: $xl) {
+
+                font-size: 3.4em;
+                width: 76%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
 
             @media (max-width: $lg) {
 
@@ -117,27 +147,7 @@
                     bottom: -5px;
                     left: 0;
                     background-color: $color-white;
-                    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
-
-                    @media (max-width: $lg) {
-
-                        filter: drop-shadow(0px 3px 5px rgb(255, 255, 255));
-                    }
-
-                    @media (max-width: $md) {
-
-                        filter: drop-shadow(0px 3px 5px rgb(255, 255, 255));
-                    }
-
-                    @media (max-width: $sm) {
-
-                        filter: drop-shadow(0px 3px 5px rgb(255, 255, 255));
-                    }
-
-                    @media (max-width: $xs) {
-
-                        filter: drop-shadow(0px 3px 5px rgb(255, 255, 255));
-                    }
+                    filter: drop-shadow(0px 3px 5px rgb(255, 255, 255));
                 }
 
                 &:hover {
@@ -155,6 +165,22 @@
             color: $color-police-main;
             margin: 20px;
             margin-left: 25%;
+
+            @media (max-width: $xxl) {
+
+                font-size: 1em;
+                width: 60%;
+                margin-left: 10%;
+                margin-top: 5px;
+            }
+
+            @media (max-width: $xl) {
+
+                font-size: 1em;
+                width: 70%;
+                margin-left: 10%;
+                margin-top: 5px;
+            }
 
             @media (max-width: $lg) {
 

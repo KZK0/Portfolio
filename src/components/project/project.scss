@@ -25,6 +25,16 @@
             margin-bottom: 50px;
             position: relative;
 
+            @media (max-width: $xxl) {
+
+                max-width: 90%;
+            }
+
+            @media (max-width: $xl) {
+
+                max-width: 90%;
+            }
+
             @media (max-width: $lg) {
 
                 max-width: 90%;
@@ -62,6 +72,16 @@
                 text-transform: uppercase;
                 margin: 0;
 
+                @media (max-width: $xxl) {
+
+                    font-size: 3.7em;
+                }
+
+                @media (max-width: $xl) {
+
+                    font-size: 3.3em;
+                }
+
                 @media (max-width: $lg) {
 
                     font-size: 2.7em;
@@ -92,6 +112,20 @@
                 top: 40px;
                 left: 30px;
                 filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.562));
+
+                @media (max-width: $xxl) {
+
+                    font-size: 2em;
+                    top: 30px;
+                    left: 40px;
+                }
+
+                @media (max-width: $xl) {
+
+                    font-size: 2em;
+                    top: 25px;
+                    left: 35px;
+                }
 
                 @media (max-width: $lg) {
 
@@ -133,28 +167,46 @@
             margin: 0 auto;
             position: relative;
 
+            @media (max-width: $xxl) {
+
+                flex-direction: row;
+                max-width: 90%;
+                gap: 0px;
+            }
+
+            @media (max-width: $xl) {
+
+                flex-direction: column-reverse;
+                max-width: 90%;
+                gap: 30px;
+            }
+
             @media (max-width: $lg) {
 
                 flex-direction: column-reverse;
                 max-width: 90%;
+                gap: 30px;
             }
 
             @media (max-width: $md) {
 
                 flex-direction: column-reverse;
                 max-width: 85%;
+                gap: 10px;
             }
 
             @media (max-width: $sm) {
 
                 flex-direction: column-reverse;
                 max-width: 85%;
+                gap: 10px;
             }
 
             @media (max-width: $xs) {
 
                 flex-direction: column-reverse;
                 max-width: 90%;
+                gap: 10px;
             }
 
             .content-firstbloc {
@@ -163,6 +215,13 @@
                 justify-content: baseline;
                 width: 40%;
                 height: 1320px;
+
+                @media (max-width: $xl) {
+
+                    width: 95%;
+                    height: 100%;
+                    justify-content: left;
+                }
 
                 @media (max-width: $lg) {
 
@@ -214,6 +273,22 @@
                     z-index: 99;
                     user-select: none;
                     height: 60px;
+
+                    @media (max-width: $xxl) {
+
+                        gap: 15px;
+                        width: 200px;
+                        height: 50px;
+                        font-size: 1.2em;
+                    }
+
+                    @media (max-width: $xl) {
+
+                        gap: 15px;
+                        width: 200px;
+                        height: 50px;
+                        font-size: 1.2em;
+                    }
 
                     @media (max-width: $lg) {
 
@@ -271,6 +346,11 @@
                 display: flex;
                 flex-direction: column;
 
+                @media (max-width: $xl) {
+
+                    width: 100%;
+                }
+
                 @media (max-width: $lg) {
 
                     width: 100%;
@@ -300,6 +380,20 @@
                     max-width: 90%;
                     border-left: 1px solid $border-light-grey;
                     border-bottom: 1px solid $border-light-grey;
+
+                    @media (max-width: $xxl) {
+
+                        flex-direction: row;
+                        max-width: 95%;
+                        margin: 0 auto;
+                    }
+
+                    @media (max-width: $xl) {
+
+                        flex-direction: row;
+                        max-width: 95%;
+                        margin: 0 auto;
+                    }
 
                     @media (max-width: $lg) {
 
@@ -374,6 +468,18 @@
                         width: 45%;
                         text-decoration: none;
 
+                        @media (max-width: $xxl) {
+
+                            width: 45%;
+                            padding: 20px;
+                        }
+
+                        @media (max-width: $xl) {
+
+                            width: 45%;
+                            padding: 20px;
+                        }
+
                         @media (max-width: $lg) {
 
                             width: 50%;
@@ -425,6 +531,12 @@
                                 margin: 0;
                                 transition: 0.4s ease;
                                 width: 50%;
+
+                                @media (max-width: $xl) {
+
+                                    width: 50%;
+                                    font-size: 1.4em;
+                                }
 
                                 @media (max-width: $lg) {
 
@@ -501,6 +613,16 @@
                             justify-content: space-between;
                             width: 100%;
                             height: 100%;
+
+                            @media (max-width: $xxl) {
+
+                                gap: 20px;
+                            }
+
+                            @media (max-width: $xl) {
+
+                                gap: 20px;
+                            }
 
                             @media (max-width: $lg) {
 
@@ -616,6 +738,18 @@
                                         margin: 0;
                                         transition: 0.4s ease;
 
+                                        @media (max-width: $xxl) {
+
+                                            font-size: 0.8em;
+                                            padding: 5px 10px;
+                                        }
+
+                                        @media (max-width: $xl) {
+
+                                            font-size: 0.75em;
+                                            padding: 5px;
+                                        }
+
                                         @media (max-width: $lg) {
 
                                             font-size: 0.65em;
@@ -653,6 +787,18 @@
                         border-left: 1px solid $border-light-grey;
                         position: relative;
                         user-select: none;
+
+                        @media (max-width: $xxl) {
+
+                            width: 50%;
+                            height: 400px;
+                        }
+
+                        @media (max-width: $xl) {
+
+                            width: 50%;
+                            height: 400px;
+                        }
 
                         @media (max-width: $lg) {
 
@@ -703,6 +849,16 @@
                             height: 100%;
                             background: linear-gradient(to bottom, #0c0b0c23, transparent);
 
+                            @media (max-width: $xxl) {
+
+                                width: 100%;
+                            }
+
+                            @media (max-width: $xl) {
+
+                                width: 100%;
+                            }
+
                             @media (max-width: $lg) {
 
                                 width: 100%;
@@ -731,6 +887,14 @@
                             object-fit: cover;
                             border-radius: 2px;
                             border: 1px solid $border-light-grey;
+
+                            @media (max-width: $xxl) {
+                                border-radius: 5px;
+                            }
+
+                            @media (max-width: $xl) {
+                                border-radius: 5px;
+                            }
 
                             @media (max-width: $lg) {
                                 border-radius: 5px;

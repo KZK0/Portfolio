@@ -20,6 +20,18 @@
         overflow: hidden;
         position: relative;
 
+        @media (max-width: $xxl) {
+
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: $xl) {
+
+            max-width: 100%;
+            width: 100%;
+        }
+
         @media (max-width: $lg) {
 
             max-width: 100%;
