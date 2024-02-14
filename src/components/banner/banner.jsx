@@ -10,7 +10,7 @@ export const Banner = () => {
     useEffect(() => {
         // Initialise l'effet de brouillard sur l'élément avec la classe banner-section
         vantaRef.current = Fog({
-            el: ".banner-section", // Sélectionne l'élément avec la classe banner-section
+            el: "#banner-section", // Sélectionne l'élément avec la classe banner-section
             color: 0x0, // Couleur du brouillard
             highlightColor: 0x0, // Couleur de mise en évidence (optionnel)
             midtoneColor: 0x0, // Couleur médiane (optionnel)
@@ -35,7 +35,7 @@ export const Banner = () => {
     }, []); // Cette fonction s'exécute une seule fois après le premier rendu
 
     return (
-        <section className='banner-section'>
+        <section id='banner-section'>
             <div className='banner-bloc'>
                 <h1>Hello, im <span className='banner-text-style'>KZKO</span>.</h1>
                 <h2>A French <span className='word-animation'>{words[currentWordIndex]}</span></h2>

@@ -24,10 +24,6 @@ export const Header = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const closeMobileMenu = () => {
-        setIsMobileMenuOpen(false);
-    };
-
     const handleNavLinkClick = () => {
         setIsMobileMenuOpen(false);
     };
@@ -46,7 +42,7 @@ export const Header = () => {
                     <hr className="hr-nav-one" />
                 </div>
                 <div className="header-scnd-bloc">
-                    <NavLink className='nav-btn' to="/">Home</NavLink>
+                    <ScrollLink className='nav-btn' activeClass="active" to="banner-section" spy={true} smooth={true} offset={-70} duration={0}>Home</ScrollLink>
                     <ScrollLink className='nav-btn' activeClass="active" to="project-section" spy={true} smooth={true} offset={-70} duration={0}>Projects</ScrollLink>
                     <hr className="hr-nav-two" />
                     <ScrollLink className='nav-contact-btn' activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0}>Contact Me<i className="fa-regular fa-envelope"></i></ScrollLink>
@@ -54,14 +50,14 @@ export const Header = () => {
                 <div className="mobile-menu">
                     <button onClick={toggleMobileMenu}><i className={`fa-solid ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i></button>
                 </div>
-                {isMobileMenuOpen && (
-                    <div className="mobile-bloc">
-                        <NavLink className='mobile-nav-btn' to="/" onClick={handleNavLinkClick}>Home</NavLink>
-                        <ScrollLink className='mobile-nav-btn' activeClass="active" to="project-section" spy={true} smooth={true} offset={-70} duration={0} onClick={handleNavLinkClick}>Projects</ScrollLink>
-                        <ScrollLink className='mobile-nav-btn' activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0} onClick={handleNavLinkClick}>Contact</ScrollLink>
-                    </div>
-                )}
             </nav>
+            {isMobileMenuOpen && (
+                <div className="mobile-bloc">
+                    <ScrollLink className='mobile-nav-btn' activeClass="active" to="banner-section" spy={true} smooth={true} offset={-70} duration={0} onClick={handleNavLinkClick}>Home</ScrollLink>
+                    <ScrollLink className='mobile-nav-btn' activeClass="active" to="project-section" spy={true} smooth={true} offset={-70} duration={0} onClick={handleNavLinkClick}>Projects</ScrollLink>
+                    <ScrollLink className='mobile-nav-btn' activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={0} onClick={handleNavLinkClick}>Contact</ScrollLink>
+                </div>
+            )}
         </header>
     )
 }
