@@ -12,7 +12,7 @@ export const Contact = () => {
         setIsEmailSent(true);
 
         emailjs
-            .sendForm('service_60c5o9g', 'template_7drojkb', form.current, '9tI4xxL3Alq0eYRlm')
+            .sendForm('service_qc6epvb', 'template_7drojkb', form.current, import.meta.env.VITE_SECRET_KEY)
             .then(
                 () => {
                     setTimeout(() => setIsEmailSent(false), 2000);
