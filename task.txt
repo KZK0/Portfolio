@@ -4,12 +4,14 @@
 
 TÂCHES PRINCIPALES:
 
-- Responsive a terminer
-- Ajout loader
+-
+-
+-
 
 
 TÂCHES SECONDAIRES:
 
+- Ajout loader
 - Finir le fichier JSON
 - Faire les images avec une IA
 - Redimmensionner les images + Webp
@@ -30,7 +32,4 @@ DIVERS/IDEES:
 
 PROBLEMES:
 
-- Lors du clique sur le bouton contact me depuis la page projet, rien ne se passe.
-- Solution safe pour liée mon email pro avec le form de contact
-- Problème de navbar au scroll, version mobile
-- Problème section skill qui dépasse
+N/A

@@ -40,7 +40,7 @@
         "for": "OPENCLASSROOMS",
         "context": "Web Application",
         "repository": "https://github.com/KZK0/Kasa.git",
-        "demo": "",
+        "demo": "http://kasa.kzko.xyz/",
         "tags": [
             "HTML5",
             "SCSS",
