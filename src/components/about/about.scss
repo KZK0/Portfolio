@@ -597,7 +597,7 @@
                     .card-img {
 
                         background-image: url(/src/assets/images/profile/me.webp);
-                        background-size: 300px;
+                        background-size: 190px;
                         background-repeat: no-repeat;
                         background-position: right 50% bottom 75%;
                         background-color: $profil-card-background;
@@ -607,6 +607,7 @@
                         height: 170px;
                         margin: 0 auto;
                         position: relative;
+                        box-shadow: $border-btn-after 0px 0px 0px 3px;
 
                         @media (max-width: $md) {
 
@@ -628,10 +629,6 @@
                             position: absolute;
                             width: 100%;
                             height: 100%;
-                            background-image: url('/src/assets/images/profile/picme.webp');
-                            background-size: 80%;
-                            background-position: center;
-                            background-repeat: no-repeat;
                             opacity: 0;
                             transition: 0.4s ease;
 
@@ -642,16 +639,16 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                width: 100%;
-                                height: 20px;
-                                bottom: -1px;
-                                left: 0;
+                                width: 174px;
+                                height: 22px;
+                                bottom: -0.5px;
+                                left: -2px;
                                 font-family: $font-main-text;
                                 font-weight: 500;
                                 font-size: 0.8em;
                                 color: $color-police-main;
                                 background-image: none;
-                                background: rgb(0, 54, 6);
+                                background: rgb(30, 100, 37);
                                 opacity: 1;
                             }
 
@@ -662,16 +659,16 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                width: 100%;
-                                height: 20px;
-                                bottom: -1px;
-                                left: 0;
+                                width: 174px;
+                                height: 22px;
+                                bottom: -0.5px;
+                                left: -2px;
                                 font-family: $font-main-text;
                                 font-weight: 500;
                                 font-size: 0.8em;
                                 color: $color-police-main;
                                 background-image: none;
-                                background: rgb(0, 54, 6);
+                                background: rgb(30, 100, 37);
                                 opacity: 1;
                             }
                         }
@@ -693,10 +690,6 @@
                             @media (max-width: $xs) {
 
                                 cursor: default;
-                            }
-
-                            &::after {
-                                opacity: 1;
                             }
                         }
                     }
